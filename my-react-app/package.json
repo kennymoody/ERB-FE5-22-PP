@@ -1,5 +1,5 @@
 {
-  "name": "my-react-app",
+  "name": "ERB-FE5-22-PP - Travel Log",
   "private": true,
   "homepage": "https://kennymoody.github.io/ERB-FE5-22-PP/",
   "version": "0.0.0",
@@ -13,6 +13,7 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "gh-pages": "^6.3.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
   },
