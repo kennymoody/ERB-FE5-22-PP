@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust | Global Heritage Explorer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Wanderlust</a>
+            <div class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="kyoto.html">Kyoto</a>
+                <a href="rome.html">Rome</a>
+                <a href="cusco.html">Cusco</a>
+                <a href="cairo.html">Cairo</a>
+                <a href="tips.html">Travel Tips</a>
+            </div>
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html" class="active">Home</a>
+        <a href="kyoto.html">Kyoto</a>
+        <a href="rome.html">Rome</a>
+        <a href="cusco.html">Cusco</a>
+        <a href="cairo.html">Cairo</a>
+        <a href="tips.html">Travel Tips</a>
+    </div>
+
+    <div class="page">
+        <section class="hero">
+            <div class="video-background">
+                <iframe 
+                    src="https://www.youtube.com/embed/9ZfN87gSjvI?autoplay=1&mute=1&controls=0&loop=1&playlist=9ZfN87gSjvI&rel=0&showinfo=0&iv_load_policy=3&enablejsapi=1&origin=https://ais-dev-xwfevo4cdvgsy5hcied6cs-55107015959.asia-northeast1.run.app" 
+                    frameborder="0" 
+                    allow="autoplay; encrypted-media" 
+                    allowfullscreen>
+                </iframe>
+                <div class="video-overlay"></div>
+            </div>
+            <div class="hero-content">
+                <h1>Capturing the Spirit <br> of the World</h1>
+                <p>An editorial journey through history and culture, curated for the modern explorer seeking breathtaking heritage.</p>
+                <div style="display: flex; gap: 20px; justify-content: center;">
+                    <a href="#destinations" class="btn">Explore Destinations</a>
+                    <a href="tips.html" class="btn btn-outline">Travel Tips</a>
+                </div>
+            </div>
+        </section>
+
+        <div id="destinations">
+            <div class="section-header">
+                <h2>Featured Places</h2>
+                <p>From ancient pyramids to serene Zen temples</p>
+            </div>
+            <div class="grid">
+                <a href="kyoto.html" class="card">
+                    <img src="https://picsum.photos/seed/kyoto/800/1200" alt="Kyoto">
+                    <div class="card-content">
+                        <span class="card-tag" style="background: #e11d48;">Japan</span>
+                        <h3>Discover Kyoto</h3>
+                        <p>Experience the beauty of the rising sun and ancient traditions.</p>
+                    </div>
+                </a>
+                <a href="rome.html" class="card">
+                    <img src="https://picsum.photos/seed/rome/800/1200" alt="Rome">
+                    <div class="card-content">
+                        <span class="card-tag" style="background: #059669;">Italy</span>
+                        <h3>Explore Rome</h3>
+                        <p>Taste the flavors of history and monumental architecture.</p>
+                    </div>
+                </a>
+                <a href="cusco.html" class="card">
+                    <img src="https://picsum.photos/seed/cusco/800/1200" alt="Cusco">
+                    <div class="card-content">
+                        <span class="card-tag" style="background: #059669;">Peru</span>
+                        <h3>Visit Cusco</h3>
+                        <p>Dance to the rhythm of the Andes and ancient Inca spirits.</p>
+                    </div>
+                </a>
+                <a href="cairo.html" class="card">
+                    <img src="https://picsum.photos/seed/cairo/800/1200" alt="Cairo">
+                    <div class="card-content">
+                        <span class="card-tag" style="background: #059669;">Egypt</span>
+                        <h3>Adventure in Cairo</h3>
+                        <p>Witness the great pyramids and the timeless Nile river.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <a href="index.html" class="footer-logo">Wanderlust</a>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="kyoto.html">Kyoto</a>
+            <a href="rome.html">Rome</a>
+            <a href="cusco.html">Cusco</a>
+            <a href="cairo.html">Cairo</a>
+            <a href="tips.html">Travel Tips</a>
+        </div>
+        <p class="copyright">&copy; 2026 Wanderlust Travel Guide. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

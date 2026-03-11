@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rome | Wanderlust Travel Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Wanderlust</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="kyoto.html">Kyoto</a>
+                <a href="rome.html" class="active">Rome</a>
+                <a href="cusco.html">Cusco</a>
+                <a href="cairo.html">Cairo</a>
+                <a href="tips.html">Travel Tips</a>
+            </div>
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="kyoto.html">Kyoto</a>
+        <a href="rome.html" class="active">Rome</a>
+        <a href="cusco.html">Cusco</a>
+        <a href="cairo.html">Cairo</a>
+        <a href="tips.html">Travel Tips</a>
+    </div>
+
+    <div class="page theme-rome">
+        <div class="detail-hero" style="background-image: url('https://picsum.photos/seed/rome-hero/1920/1080')">
+            <div class="detail-hero-content">
+                <p>Explore Italy</p>
+                <h1>Rome</h1>
+            </div>
+        </div>
+        <div class="container">
+            <div class="main-content">
+                <!-- Video Section -->
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/DEACm96vWMA" title="Rome Travel Video" allowfullscreen></iframe>
+                </div>
+
+                <section>
+                    <h2>The Eternal City</h2>
+                    <p>Founded in 753 BC, Rome was the center of the Roman Empire, which dominated the Mediterranean for centuries. It later became the heart of the Catholic Church and a major center of the Renaissance.</p>
+                </section>
+
+                <!-- Parrot Section -->
+                <section class="parrot-section">
+                    <img src="https://picsum.photos/seed/parrot-rome/600/600" alt="Monk Parakeet" class="parrot-image">
+                    <div class="parrot-info">
+                        <h3>Local Avian Life: Monk Parakeet</h3>
+                        <p>Rome has become home to large colonies of Monk Parakeets (Quakers). These bright green birds build massive communal nests in the city's pine trees and are known for their loud, social nature.</p>
+                        <p><strong>Where to find:</strong> Visit the Villa Borghese gardens or the parks around the Appian Way to see them in action.</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Must-Visit Attractions</h2>
+                    <div class="attractions">
+                        <div class="attr-card">
+                            <img src="https://picsum.photos/seed/colosseum/600/400" alt="Colosseum">
+                            <div class="attr-card-body">
+                                <h4>The Colosseum</h4>
+                                <p>The largest ancient amphitheatre ever built, used for gladiatorial contests.</p>
+                            </div>
+                        </div>
+                        <div class="attr-card">
+                            <img src="https://picsum.photos/seed/vatican/600/400" alt="Vatican">
+                            <div class="attr-card-body">
+                                <h4>Vatican Museums</h4>
+                                <p>Home to the Sistine Chapel and some of the world's most important art.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="image-gallery">
+                    <h2>Rome Gallery</h2>
+                    <div class="gallery-grid">
+                        <div class="gallery-item"><img src="https://picsum.photos/seed/rome1/600/600" alt="Trevi Fountain" referrerPolicy="no-referrer"></div>
+                        <div class="gallery-item"><img src="https://picsum.photos/seed/rome2/600/600" alt="Pantheon" referrerPolicy="no-referrer"></div>
+                        <div class="gallery-item"><img src="https://picsum.photos/seed/rome3/600/600" alt="Roman Forum" referrerPolicy="no-referrer"></div>
+                        <div class="gallery-item"><img src="https://picsum.photos/seed/rome4/600/600" alt="Spanish Steps" referrerPolicy="no-referrer"></div>
+                    </div>
+                </section>
+
+                <section class="local-tips">
+                    <h2>Local Insights</h2>
+                    <div class="tips-grid">
+                        <div class="tip-item">
+                            <h4>🍝 Must-Try Dishes</h4>
+                            <p>Indulge in authentic <strong>Carbonara</strong> or <strong>Cacio e Pepe</strong>. For a street snack, grab a <strong>Supplì</strong> (fried rice ball) and finish with artisanal <strong>Gelato</strong> from a local gelateria.</p>
+                        </div>
+                        <div class="tip-item">
+                            <h4>🚶 Getting Around</h4>
+                            <p>The best way to experience Rome is on <strong>foot</strong>. The historic center is mostly walkable. Use the <strong>Metro</strong> for longer distances, but be mindful of your belongings in crowded tourist areas.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Location Map</h2>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d190028.2570988733!2d12.3959153!3d41.909986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f6196f992864b%3A0x21515701035a0c31!2sRome%2C%20Metropolitan%20City%20of%20Rome%20Capital%2C%20Italy!5e0!3m2!1sen!2sus!4v1700000000000" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </section>
+            </div>
+            <aside class="sidebar">
+                <h3>Traveler's Guide</h3>
+                <div class="info-item">
+                    <label>Best Time to Visit</label>
+                    <span>April to June or September to October</span>
+                </div>
+
+                <div class="enriched-info-grid">
+                    <div class="info-card">
+                        <label>Voltage</label>
+                        <span>230V / 50Hz</span>
+                    </div>
+                    <div class="info-card">
+                        <label>Plug Type</label>
+                        <img src="https://www.worldstandards.eu/wp-content/uploads/electricity-tiles-type-C-200x200.jpg" class="plug-icon" alt="Type C">
+                        <span>Type C / F / L</span>
+                    </div>
+                    <div class="info-card">
+                        <label>Avg Temp</label>
+                        <span>18°C - 28°C</span>
+                    </div>
+                    <div class="info-card">
+                        <label>Exchange Rate</label>
+                        <span>1 USD ≈ 0.92 EUR</span>
+                    </div>
+                </div>
+
+                <div class="info-item" style="margin-top: 25px;">
+                    <label>Currency</label>
+                    <span>Euro (EUR)</span>
+                </div>
+                <div class="info-item">
+                    <label>Language</label>
+                    <span>Italian</span>
+                </div>
+                <div class="info-item">
+                    <label>Getting Around</label>
+                    <span>Metro, buses, and trams; best explored on foot.</span>
+                </div>
+
+                <!-- Weather Widget -->
+                <div class="weather-widget" id="weatherWidget" data-lat="41.8902" data-lon="12.4922">
+                    <div class="weather-header">
+                        <h4>Local Weather</h4>
+                        <span style="font-size: 0.7rem; color: var(--text-light);">Rome, IT</span>
+                    </div>
+                    <div class="current-weather">
+                        <span class="weather-icon">☀️</span>
+                        <span class="current-temp" id="currentTemp">--°C</span>
+                    </div>
+                    <div class="forecast-grid" id="forecastGrid">
+                        <!-- Forecast items will be injected here -->
+                    </div>
+                </div>
+
+                <!-- Currency Converter -->
+                <div class="currency-widget" id="currencyWidget" data-target="EUR">
+                    <h4>Currency Converter</h4>
+                    <div class="converter-inputs">
+                        <div class="input-group">
+                            <label>HKD (Hong Kong Dollar)</label>
+                            <input type="number" id="hkdInput" placeholder="0.00">
+                        </div>
+                        <div class="input-group">
+                            <label>EUR (Euro)</label>
+                            <input type="number" id="localInput" placeholder="0.00">
+                        </div>
+                    </div>
+                    <div class="exchange-rate-info" id="rateInfo">
+                        Fetching latest rates...
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <footer>
+        <a href="index.html" class="footer-logo">Wanderlust</a>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="kyoto.html">Kyoto</a>
+            <a href="rome.html">Rome</a>
+            <a href="cusco.html">Cusco</a>
+            <a href="cairo.html">Cairo</a>
+            <a href="tips.html">Travel Tips</a>
+        </div>
+        <p class="copyright">&copy; 2026 Wanderlust Travel Guide. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

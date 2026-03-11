@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kyoto | Wanderlust Travel Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Wanderlust</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="kyoto.html" class="active">Kyoto</a>
+                <a href="rome.html">Rome</a>
+                <a href="cusco.html">Cusco</a>
+                <a href="cairo.html">Cairo</a>
+                <a href="tips.html">Travel Tips</a>
+            </div>
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="kyoto.html" class="active">Kyoto</a>
+        <a href="rome.html">Rome</a>
+        <a href="cusco.html">Cusco</a>
+        <a href="cairo.html">Cairo</a>
+        <a href="tips.html">Travel Tips</a>
+    </div>
+
+    <div class="page theme-kyoto">
+        <div class="detail-hero" style="background-image: url('https://picsum.photos/seed/kyoto-hero/1920/1080')">
+            <div class="detail-hero-content">
+                <p>Explore Japan</p>
+                <h1>Kyoto</h1>
+            </div>
+        </div>
+        <div class="container">
+            <div class="main-content">
+                <!-- Video Section -->
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/2nd_v997E-M" title="Kyoto Travel Video" allowfullscreen></iframe>
+                </div>
+
+                <section>
+                    <h2>A Legacy Through Time</h2>
+                    <p>Kyoto served as Japan's imperial capital for over a millennium (794–1868). It was spared from much of the destruction of WWII, preserving its countless historical treasures. The city was originally modeled after the Tang dynasty capital of Chang'an.</p>
+                </section>
+
+                <!-- Parrot Section -->
+                <section class="parrot-section">
+                    <img src="https://picsum.photos/seed/parrot-japan/600/600" alt="Rose-ringed Parakeet" class="parrot-image">
+                    <div class="parrot-info">
+                        <h3>Local Avian Life: Rose-ringed Parakeet</h3>
+                        <p>While not native, these vibrant green parakeets have established a significant population in Japan's urban areas, including Kyoto's temple gardens. They are often seen nesting in old trees near shrines.</p>
+                        <p><strong>Where to find:</strong> Look up in the large camphor trees near the Heian Shrine or the outskirts of Arashiyama.</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Must-Visit Attractions</h2>
+                    <div class="attractions">
+                        <div class="attr-card">
+                            <img src="https://picsum.photos/seed/inari/600/400" alt="Inari">
+                            <div class="attr-card-body">
+                                <h4>Fushimi Inari-taisha</h4>
+                                <p>Famous for its thousands of vermilion torii gates winding up the mountain.</p>
+                            </div>
+                        </div>
+                        <div class="attr-card">
+                            <img src="https://picsum.photos/seed/gold/600/400" alt="Kinkaku">
+                            <div class="attr-card-body">
+                                <h4>Kinkaku-ji</h4>
+                                <p>The Golden Pavilion, a Zen temple whose top two floors are covered in gold leaf.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="image-gallery">
+                    <h2>Kyoto Gallery</h2>
+                    <div class="gallery-grid">
+                        <div class="gallery-item"><img src="https://picsum.photos/seed/kyoto1/600/600" alt="Arashiyama Bamboo Grove" referrerPolicy="no-referrer"></div>
+                        <div class="gallery-item"><img src="https://picsum.photos/seed/kyoto2/600/600" alt="Gion District" referrerPolicy="no-referrer"></div>
+                        <div class="gallery-item"><img src="https://picsum.photos/seed/kyoto3/600/600" alt="Kiyomizu-dera" referrerPolicy="no-referrer"></div>
+                        <div class="gallery-item"><img src="https://picsum.photos/seed/kyoto4/600/600" alt="Philosopher's Path" referrerPolicy="no-referrer"></div>
+                    </div>
+                </section>
+
+                <section class="local-tips">
+                    <h2>Local Insights</h2>
+                    <div class="tips-grid">
+                        <div class="tip-item">
+                            <h4>🍱 Must-Try Dishes</h4>
+                            <p>Don't miss <strong>Kaiseki Ryori</strong>, Kyoto's refined multi-course dining. For a quick treat, try <strong>Matcha-flavored sweets</strong> in Uji or <strong>Yudofu</strong> (tofu hot pot) near Nanzen-ji temple.</p>
+                        </div>
+                        <div class="tip-item">
+                            <h4>🚌 Getting Around</h4>
+                            <p>Kyoto's bus network is extensive. A <strong>one-day bus pass</strong> is highly recommended. For a unique perspective, <strong>rent a bicycle</strong> to navigate the flat city streets and scenic river paths.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Location Map</h2>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m13!1m3!1d104597.38794833215!2d135.68361044702148!3d35.011636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001a8d6cd3d3f01%3A0x108aa92723bc5677!2sKyoto%2C%20Japan!5e0!3m2!1sen!2sus!4v1700000000000" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </section>
+            </div>
+            <aside class="sidebar">
+                <h3>Traveler's Guide</h3>
+                <div class="info-item">
+                    <label>Best Time to Visit</label>
+                    <span>Spring (Cherry Blossoms) or Autumn (Fall Colors)</span>
+                </div>
+                
+                <div class="enriched-info-grid">
+                    <div class="info-card">
+                        <label>Voltage</label>
+                        <span>100V / 50-60Hz</span>
+                    </div>
+                    <div class="info-card">
+                        <label>Plug Type</label>
+                        <img src="https://www.worldstandards.eu/wp-content/uploads/electricity-tiles-type-A-200x200.jpg" class="plug-icon" alt="Type A">
+                        <span>Type A / B</span>
+                    </div>
+                    <div class="info-card">
+                        <label>Avg Temp</label>
+                        <span>15°C - 22°C</span>
+                    </div>
+                    <div class="info-card">
+                        <label>Exchange Rate</label>
+                        <span>1 USD ≈ 150 JPY</span>
+                    </div>
+                </div>
+
+                <div class="info-item" style="margin-top: 25px;">
+                    <label>Currency</label>
+                    <span>Japanese Yen (JPY)</span>
+                </div>
+                <div class="info-item">
+                    <label>Language</label>
+                    <span>Japanese</span>
+                </div>
+                <div class="info-item">
+                    <label>Getting Around</label>
+                    <span>Excellent bus and subway network; very walkable.</span>
+                </div>
+
+                <!-- Weather Widget -->
+                <div class="weather-widget" id="weatherWidget" data-lat="35.0116" data-lon="135.7681">
+                    <div class="weather-header">
+                        <h4>Local Weather</h4>
+                        <span style="font-size: 0.7rem; color: var(--text-light);">Kyoto, JP</span>
+                    </div>
+                    <div class="current-weather">
+                        <span class="weather-icon">☀️</span>
+                        <span class="current-temp" id="currentTemp">--°C</span>
+                    </div>
+                    <div class="forecast-grid" id="forecastGrid">
+                        <!-- Forecast items will be injected here -->
+                    </div>
+                </div>
+
+                <!-- Currency Converter -->
+                <div class="currency-widget" id="currencyWidget" data-target="JPY">
+                    <h4>Currency Converter</h4>
+                    <div class="converter-inputs">
+                        <div class="input-group">
+                            <label>HKD (Hong Kong Dollar)</label>
+                            <input type="number" id="hkdInput" placeholder="0.00">
+                        </div>
+                        <div class="input-group">
+                            <label>JPY (Japanese Yen)</label>
+                            <input type="number" id="localInput" placeholder="0.00">
+                        </div>
+                    </div>
+                    <div class="exchange-rate-info" id="rateInfo">
+                        Fetching latest rates...
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <footer>
+        <a href="index.html" class="footer-logo">Wanderlust</a>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="kyoto.html">Kyoto</a>
+            <a href="rome.html">Rome</a>
+            <a href="cusco.html">Cusco</a>
+            <a href="cairo.html">Cairo</a>
+            <a href="tips.html">Travel Tips</a>
+        </div>
+        <p class="copyright">&copy; 2026 Wanderlust Travel Guide. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

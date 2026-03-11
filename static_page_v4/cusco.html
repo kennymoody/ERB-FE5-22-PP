@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cusco | Wanderlust Travel Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Wanderlust</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="kyoto.html">Kyoto</a>
+                <a href="rome.html">Rome</a>
+                <a href="cusco.html" class="active">Cusco</a>
+                <a href="cairo.html">Cairo</a>
+                <a href="tips.html">Travel Tips</a>
+            </div>
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="kyoto.html">Kyoto</a>
+        <a href="rome.html">Rome</a>
+        <a href="cusco.html" class="active">Cusco</a>
+        <a href="cairo.html">Cairo</a>
+        <a href="tips.html">Travel Tips</a>
+    </div>
+
+    <div class="page theme-cusco">
+        <div class="detail-hero" style="background-image: url('https://picsum.photos/seed/cusco-hero/1920/1080')">
+            <div class="detail-hero-content">
+                <p>Explore Peru</p>
+                <h1>Cusco</h1>
+            </div>
+        </div>
+        <div class="container">
+            <div class="main-content">
+                <!-- Video Section -->
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/Zk9J5xnTVMA" title="Cusco Travel Video" allowfullscreen></iframe>
+                </div>
+
+                <section>
+                    <h2>Capital of the Inca</h2>
+                    <p>Cusco was the religious and administrative center of the Inca Empire. After the Spanish conquest, many colonial buildings were built directly on top of Inca stone foundations, creating a unique architectural hybrid.</p>
+                </section>
+
+                <!-- Parrot Section -->
+                <section class="parrot-section">
+                    <img src="https://picsum.photos/seed/parrot-peru/600/600" alt="Mitred Parakeet" class="parrot-image">
+                    <div class="parrot-info">
+                        <h3>Local Avian Life: Mitred Parakeet</h3>
+                        <p>The Mitred Parakeet is a stunning bird with a distinctive red face. They are native to the Andes and are frequently seen in large, noisy flocks flying over the Sacred Valley near Cusco.</p>
+                        <p><strong>Where to find:</strong> They are common in the Urubamba Valley and can often be spotted in the trees around the ruins of Ollantaytambo.</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Must-Visit Attractions</h2>
+                    <div class="attractions">
+                        <div class="attr-card">
+                            <img src="https://picsum.photos/seed/machu/600/400" alt="Machu Picchu">
+                            <div class="attr-card-body">
+                                <h4>Machu Picchu</h4>
+                                <p>The "Lost City of the Incas", a breathtaking 15th-century citadel on a mountain ridge.</p>
+                            </div>
+                        </div>
+                        <div class="attr-card">
+                            <img src="https://picsum.photos/seed/plaza/600/400" alt="Plaza">
+                            <div class="attr-card-body">
+                                <h4>Plaza de Armas</h4>
+                                <p>The central square, surrounded by colonial arcades and the historic Cathedral.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="image-gallery">
+                    <h2>Cusco Gallery</h2>
+                    <div class="gallery-grid">
+                        <div class="gallery-item"><img src="https://picsum.photos/seed/cusco1/600/600" alt="Sacsayhuamán" referrerPolicy="no-referrer"></div>
+                        <div class="gallery-item"><img src="https://picsum.photos/seed/cusco2/600/600" alt="San Blas Neighborhood" referrerPolicy="no-referrer"></div>
+                        <div class="gallery-item"><img src="https://picsum.photos/seed/cusco3/600/600" alt="Maras Salt Mines" referrerPolicy="no-referrer"></div>
+                        <div class="gallery-item"><img src="https://picsum.photos/seed/cusco4/600/600" alt="Moray Terraces" referrerPolicy="no-referrer"></div>
+                    </div>
+                </section>
+
+                <section class="local-tips">
+                    <h2>Local Insights</h2>
+                    <div class="tips-grid">
+                        <div class="tip-item">
+                            <h4>🥘 Must-Try Dishes</h4>
+                            <p>Try <strong>Lomo Saltado</strong> (stir-fried beef) or <strong>Alpaca steak</strong> for a local specialty. To combat altitude sickness, sip on <strong>Coca tea</strong>, which is readily available in most hotels and cafes.</p>
+                        </div>
+                        <div class="tip-item">
+                            <h4>🚐 Getting Around</h4>
+                            <p>Use <strong>colectivos</strong> (shared vans) for affordable travel to the Sacred Valley. Within Cusco, the city center is best explored on <strong>foot</strong>, though be prepared for steep cobblestone streets.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Location Map</h2>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62065.5536553531!2d-71.992031!3d-13.53195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x916e7f410777ec33%3A0x51275a51c501f820!2sCusco%2C%20Peru!5e0!3m2!1sen!2sus!4v1700000000000" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </section>
+            </div>
+            <aside class="sidebar">
+                <h3>Traveler's Guide</h3>
+                <div class="info-item">
+                    <label>Best Time to Visit</label>
+                    <span>May to September (Dry Season)</span>
+                </div>
+
+                <div class="enriched-info-grid">
+                    <div class="info-card">
+                        <label>Voltage</label>
+                        <span>220V / 60Hz</span>
+                    </div>
+                    <div class="info-card">
+                        <label>Plug Type</label>
+                        <img src="https://www.worldstandards.eu/wp-content/uploads/electricity-tiles-type-A-200x200.jpg" class="plug-icon" alt="Type A">
+                        <span>Type A / C</span>
+                    </div>
+                    <div class="info-card">
+                        <label>Avg Temp</label>
+                        <span>10°C - 20°C</span>
+                    </div>
+                    <div class="info-card">
+                        <label>Exchange Rate</label>
+                        <span>1 USD ≈ 3.75 PEN</span>
+                    </div>
+                </div>
+
+                <div class="info-item" style="margin-top: 25px;">
+                    <label>Currency</label>
+                    <span>Peruvian Sol (PEN)</span>
+                </div>
+                <div class="info-item">
+                    <label>Language</label>
+                    <span>Spanish, Quechua</span>
+                </div>
+                <div class="info-item">
+                    <label>Getting Around</label>
+                    <span>Walking in the city; taxis for longer distances.</span>
+                </div>
+
+                <!-- Weather Widget -->
+                <div class="weather-widget" id="weatherWidget" data-lat="-13.5319" data-lon="-71.9675">
+                    <div class="weather-header">
+                        <h4>Local Weather</h4>
+                        <span style="font-size: 0.7rem; color: var(--text-light);">Cusco, PE</span>
+                    </div>
+                    <div class="current-weather">
+                        <span class="weather-icon">☀️</span>
+                        <span class="current-temp" id="currentTemp">--°C</span>
+                    </div>
+                    <div class="forecast-grid" id="forecastGrid">
+                        <!-- Forecast items will be injected here -->
+                    </div>
+                </div>
+
+                <!-- Currency Converter -->
+                <div class="currency-widget" id="currencyWidget" data-target="PEN">
+                    <h4>Currency Converter</h4>
+                    <div class="converter-inputs">
+                        <div class="input-group">
+                            <label>HKD (Hong Kong Dollar)</label>
+                            <input type="number" id="hkdInput" placeholder="0.00">
+                        </div>
+                        <div class="input-group">
+                            <label>PEN (Peruvian Sol)</label>
+                            <input type="number" id="localInput" placeholder="0.00">
+                        </div>
+                    </div>
+                    <div class="exchange-rate-info" id="rateInfo">
+                        Fetching latest rates...
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <footer>
+        <a href="index.html" class="footer-logo">Wanderlust</a>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="kyoto.html">Kyoto</a>
+            <a href="rome.html">Rome</a>
+            <a href="cusco.html">Cusco</a>
+            <a href="cairo.html">Cairo</a>
+            <a href="tips.html">Travel Tips</a>
+        </div>
+        <p class="copyright">&copy; 2026 Wanderlust Travel Guide. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

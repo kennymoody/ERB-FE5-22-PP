@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cairo | Wanderlust Travel Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Wanderlust</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="kyoto.html">Kyoto</a>
+                <a href="rome.html">Rome</a>
+                <a href="cusco.html">Cusco</a>
+                <a href="cairo.html" class="active">Cairo</a>
+                <a href="tips.html">Travel Tips</a>
+            </div>
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="kyoto.html">Kyoto</a>
+        <a href="rome.html">Rome</a>
+        <a href="cusco.html">Cusco</a>
+        <a href="cairo.html" class="active">Cairo</a>
+        <a href="tips.html">Travel Tips</a>
+    </div>
+
+    <div class="page theme-cairo">
+        <div class="detail-hero" style="background-image: url('https://picsum.photos/seed/cairo-hero/1920/1080')">
+            <div class="detail-hero-content">
+                <p>Explore Egypt</p>
+                <h1>Cairo</h1>
+            </div>
+        </div>
+        <div class="container">
+            <div class="main-content">
+                <!-- Video Section -->
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/5_vT_u_L690" title="Cairo Travel Video" allowfullscreen></iframe>
+                </div>
+
+                <section>
+                    <h2>Gateway to Antiquity</h2>
+                    <p>Cairo has been a major center of Islamic culture for centuries. Nearby Giza is home to the only remaining wonder of the ancient world: the Great Pyramid of Khufu.</p>
+                </section>
+
+                <!-- Parrot Section -->
+                <section class="parrot-section">
+                    <img src="https://picsum.photos/seed/parrot-egypt/600/600" alt="Rose-ringed Parakeet" class="parrot-image">
+                    <div class="parrot-info">
+                        <h3>Local Avian Life: Rose-ringed Parakeet</h3>
+                        <p>In Cairo, the Rose-ringed Parakeet is a common sight. These resilient birds thrive in the city's gardens and along the Nile, their bright green feathers contrasting with the desert-toned architecture.</p>
+                        <p><strong>Where to find:</strong> Look for them in the Al-Azhar Park or the gardens of the Gezira Island in the early morning.</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Must-Visit Attractions</h2>
+                    <div class="attractions">
+                        <div class="attr-card">
+                            <img src="https://picsum.photos/seed/pyramids/600/400" alt="Pyramids">
+                            <div class="attr-card-body">
+                                <h4>Pyramids of Giza</h4>
+                                <p>The iconic tombs of the Pharaohs, guarded by the Great Sphinx.</p>
+                            </div>
+                        </div>
+                        <div class="attr-card">
+                            <img src="https://picsum.photos/seed/museum/600/400" alt="Museum">
+                            <div class="attr-card-body">
+                                <h4>Egyptian Museum</h4>
+                                <p>Houses the world's most extensive collection of Pharaonic antiquities.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="image-gallery">
+                    <h2>Cairo Gallery</h2>
+                    <div class="gallery-grid">
+                        <div class="gallery-item"><img src="https://picsum.photos/seed/cairo1/600/600" alt="Khan el-Khalili" referrerPolicy="no-referrer"></div>
+                        <div class="gallery-item"><img src="https://picsum.photos/seed/cairo2/600/600" alt="Saladin Citadel" referrerPolicy="no-referrer"></div>
+                        <div class="gallery-item"><img src="https://picsum.photos/seed/cairo3/600/600" alt="Al-Azhar Park" referrerPolicy="no-referrer"></div>
+                        <div class="gallery-item"><img src="https://picsum.photos/seed/cairo4/600/600" alt="Nile River" referrerPolicy="no-referrer"></div>
+                    </div>
+                </section>
+
+                <section class="local-tips">
+                    <h2>Local Insights</h2>
+                    <div class="tips-grid">
+                        <div class="tip-item">
+                            <h4>🍲 Must-Try Dishes</h4>
+                            <p>Sample <strong>Koshary</strong>, Egypt's beloved national dish of lentils, rice, and pasta. For breakfast, try <strong>Ta'ameya</strong> (Egyptian falafel) and end your meal with <strong>Om Ali</strong>, a warm bread pudding.</p>
+                        </div>
+                        <div class="tip-item">
+                            <h4>🚗 Getting Around</h4>
+                            <p>Use <strong>Uber</strong> or <strong>Careem</strong> for reliable, fixed-price transportation. The <strong>Cairo Metro</strong> is an efficient way to bypass heavy traffic, though it can be very crowded during peak hours.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Location Map</h2>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110502.603850435!2d31.188423!3d30.044419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583fa60b21beeb%3A0x79dfb2965119937!2sCairo%2C%20Cairo%20Governorate%2C%20Egypt!5e0!3m2!1sen!2sus!4v1700000000000" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </section>
+            </div>
+            <aside class="sidebar">
+                <h3>Traveler's Guide</h3>
+                <div class="info-item">
+                    <label>Best Time to Visit</label>
+                    <span>October to April (Cooler Weather)</span>
+                </div>
+
+                <div class="enriched-info-grid">
+                    <div class="info-card">
+                        <label>Voltage</label>
+                        <span>220V / 50Hz</span>
+                    </div>
+                    <div class="info-card">
+                        <label>Plug Type</label>
+                        <img src="https://www.worldstandards.eu/wp-content/uploads/electricity-tiles-type-C-200x200.jpg" class="plug-icon" alt="Type C">
+                        <span>Type C / F</span>
+                    </div>
+                    <div class="info-card">
+                        <label>Avg Temp</label>
+                        <span>20°C - 35°C</span>
+                    </div>
+                    <div class="info-card">
+                        <label>Exchange Rate</label>
+                        <span>1 USD ≈ 48 EGP</span>
+                    </div>
+                </div>
+
+                <div class="info-item" style="margin-top: 25px;">
+                    <label>Currency</label>
+                    <span>Egyptian Pound (EGP)</span>
+                </div>
+                <div class="info-item">
+                    <label>Language</label>
+                    <span>Arabic</span>
+                </div>
+                <div class="info-item">
+                    <label>Getting Around</label>
+                    <span>Metro, taxis, and ride-sharing apps like Uber.</span>
+                </div>
+
+                <!-- Weather Widget -->
+                <div class="weather-widget" id="weatherWidget" data-lat="30.0444" data-lon="31.2357">
+                    <div class="weather-header">
+                        <h4>Local Weather</h4>
+                        <span style="font-size: 0.7rem; color: var(--text-light);">Cairo, EG</span>
+                    </div>
+                    <div class="current-weather">
+                        <span class="weather-icon">☀️</span>
+                        <span class="current-temp" id="currentTemp">--°C</span>
+                    </div>
+                    <div class="forecast-grid" id="forecastGrid">
+                        <!-- Forecast items will be injected here -->
+                    </div>
+                </div>
+
+                <!-- Currency Converter -->
+                <div class="currency-widget" id="currencyWidget" data-target="EGP">
+                    <h4>Currency Converter</h4>
+                    <div class="converter-inputs">
+                        <div class="input-group">
+                            <label>HKD (Hong Kong Dollar)</label>
+                            <input type="number" id="hkdInput" placeholder="0.00">
+                        </div>
+                        <div class="input-group">
+                            <label>EGP (Egyptian Pound)</label>
+                            <input type="number" id="localInput" placeholder="0.00">
+                        </div>
+                    </div>
+                    <div class="exchange-rate-info" id="rateInfo">
+                        Fetching latest rates...
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <footer>
+        <a href="index.html" class="footer-logo">Wanderlust</a>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="kyoto.html">Kyoto</a>
+            <a href="rome.html">Rome</a>
+            <a href="cusco.html">Cusco</a>
+            <a href="cairo.html">Cairo</a>
+            <a href="tips.html">Travel Tips</a>
+        </div>
+        <p class="copyright">&copy; 2026 Wanderlust Travel Guide. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

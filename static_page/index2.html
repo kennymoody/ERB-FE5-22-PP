@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Discover 4 Worlds: Japan • Italy • Brazil • Kenya</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #0f0f0f;
+      color: #fff;
+      line-height: 1.6;
+    }
+    /* Navbar */
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0,0,0,0.8);
+      backdrop-filter: blur(10px);
+      padding: 1rem 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+    .navbar .brand {
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: #ff4d4d; /* Japan red accent */
+    }
+    .nav-links a {
+      color: #ddd;
+      text-decoration: none;
+      margin-left: 1.8rem;
+      font-size: 1rem;
+    }
+    .nav-links a:hover {
+      color: #fff;
+    }
+    .search {
+      background: rgba(255,255,255,0.1);
+      border: none;
+      padding: 0.6rem 1rem;
+      border-radius: 20px;
+      color: #fff;
+      width: 180px;
+    }
+    /* Hero Cards Section */
+    .hero {
+      padding-top: 90px; /* space for fixed navbar */
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      justify-content: center;
+      align-items: center;
+      justify-items: center;
+      align-content: center;
+      gap: 1.5rem;
+      padding: 2rem 5%;
+      min-height: 100vh;
+    }
+    .card {
+      position: relative;
+      height: 520px;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.04);
+    }
+    .card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s;
+    }
+    .card:hover img {
+      transform: scale(1.08);
+    }
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.3) 50%, transparent 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 2rem;
+    }
+    .flag-label {
+      position: absolute;
+      top: 1.5rem;
+      left: 1.5rem;
+      background: rgba(0,0,0,0.6);
+      padding: 0.5rem 1rem;
+      border-radius: 30px;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+    .card-title {
+      font-size: 2.2rem;
+      margin-bottom: 0.5rem;
+    }
+    .card-text {
+      font-size: 1.1rem;
+      opacity: 0.9;
+      max-width: 90%;
+    }
+    /* Country-specific accents */
+    .japan .flag-label { background: #c8102e; color: white; }
+    .italy  .flag-label { background: #009246; color: white; }
+    .brazil .flag-label { background: #009c3b; color: white; }
+    .kenya  .flag-label { background: #006600; color: white; }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #888;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="brand">Discover 4 Worlds</div>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Destinations</a>
+      <a href="#">Compare</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+    <input type="search" class="search" placeholder="Search tours...">
+  </nav>
+
+  <!-- Hero Cards -->
+  <section class="hero">
+    <div class="card japan">
+      <img src="https://thumbs.dreamstime.com/b/mt-fuji-cherry-blossom-sakura-spring-fujiyoshida-ja-japan-84849176.jpg" alt="Mount Fuji Cherry Blossoms">
+      <div class="flag-label">JAPAN</div>
+      <div class="overlay">
+        <h2 class="card-title">Discover Japan</h2>
+        <p class="card-text">Experience the beauty of the rising sun</p>
+      </div>
+    </div>
+
+    <div class="card italy">
+      <img src="https://plus.unsplash.com/premium_photo-1661962723801-1015e61ec340?fm=jpg&q=60&auto=format&fit=crop" alt="Colosseum Rome Sunset">
+      <div class="flag-label">ITALY</div>
+      <div class="overlay">
+        <h2 class="card-title">Explore Italy</h2>
+        <p class="card-text">Taste the flavors of Tuscany</p>
+      </div>
+    </div>
+
+    <div class="card brazil">
+      <img src="https://thumbs.dreamstime.com/b/aerial-view-christ-redeemer-rio-de-janeiro-city-aerial-view-christ-redeemer-rio-de-janeiro-city-brazil-110769187.jpg" alt="Christ the Redeemer Rio">
+      <div class="flag-label">BRAZIL</div>
+      <div class="overlay">
+        <h2 class="card-title">Visit Brazil</h2>
+        <p class="card-text">Dance to the rhythm of samba</p>
+      </div>
+    </div>
+
+    <div class="card kenya">
+      <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Maasai Mara Safari Kenya"> <!-- fallback; replace if needed -->
+      <div class="flag-label">KENYA</div>
+      <div class="overlay">
+        <h2 class="card-title">Adventure in Kenya</h2>
+        <p class="card-text">Witness the great wildebeest migration</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Kenny's Travel World • Made with ❤️ in Hong Kong
+  </footer>
+
+</body>
+</html>
