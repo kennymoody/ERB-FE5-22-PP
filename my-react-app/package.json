@@ -1,7 +1,7 @@
 {
   "name": "ERB-FE5-22-PP",
   "private": true,
-  // "homepage": "https://kennymoody.github.io/ERB-FE5-22-PP/",
+  "homepage": ".",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
