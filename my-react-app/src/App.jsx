@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import NavBar from "./components/NavBar";
-import Hero from "./components/Hero";
+import NavBar from "./components/NavBarV2";
+import Hero from "./components/HeroV2";
 import About from "./components/About";
 import Services from "./components/Services";
 import Tours from "./components/Tours";
-import Country from "./components/Country";
+import Country from "./components/CountryV2";
 import Footer from "./components/Footer";
 
 function App() {
@@ -12,15 +12,13 @@ function App() {
 
   return (
     <React.Fragment>
-      <div className="container" id="home">
         <NavBar />
         <Hero />
         <Country />
         {/* <About /> */}
         {/* <Services /> */}
         {/* <Tours /> */}
-        <Footer />
-      </div>
+        {/* <Footer /> */}
     </React.Fragment>
   );
 }

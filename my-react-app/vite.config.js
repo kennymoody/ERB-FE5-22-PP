@@ -8,5 +8,5 @@ export default defineConfig({
     allowedHosts: ["reactserver.kennymoody.net"], // DANGER: Allows requests from any host
     port: 5600,
   },
-  base: "https://kennymoody.github.io/ERB-FE5-22-PP/",
+  // base: "https://kennymoody.github.io/ERB-FE5-22-PP/",
 });
