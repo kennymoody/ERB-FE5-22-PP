@@ -156,7 +156,7 @@ export const locations = [
     id: 1,
     cardtag: "Japan",
     detail: "lorem ipsum dolor sit amet consectetur",
-    flag: "🇯🇵",
+    flag: "JP",
     path: "/kyoto/",
     title: "kyoto",
     imagesrc: "https://picsum.photos/seed/kyoto/800/1200"
@@ -165,7 +165,7 @@ export const locations = [
     id: 2,
   cardtag: "Italy",
     detail: "Taste the flavors of history and monumental architecture.",
-    flag: "🇮🇹",
+    flag: "IT",
     path: "/rome/",
     title: "rome",
     imagesrc: "https://picsum.photos/seed/rome/800/1200"
@@ -174,7 +174,7 @@ export const locations = [
     id: 3,
   cardtag: "Peru",
     detail: "Dance to the rhythm of the Andes and ancient Inca spirits.",
-    flag: "🇵🇪",
+    flag: "PE",
     path: "/cusco/",
     title: "cusco",
     imagesrc: "https://picsum.photos/seed/cusco/800/1200"
@@ -183,7 +183,7 @@ export const locations = [
     id: 4,
   cardtag: "Egypt",
     detail: "Witness the great pyramids and the timeless Nile river.",
-    flag: "🇪🇬",
+    flag: "EG",
     path: "/cairo/",
     title: "cairo",
     imagesrc: "https://picsum.photos/seed/cairo/800/1200"

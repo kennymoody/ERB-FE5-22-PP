@@ -177,7 +177,7 @@ nav.nav-scrolled .mobile-menu-toggle {
   position: fixed;
   top: 0;
   right: -100%;
-  width: 30%;
+  width: 50%;
   max-width: 350px;
   height: 100vh;
   background: var(--color-white);
@@ -359,7 +359,7 @@ nav.nav-scrolled .mobile-menu-toggle {
   background: #0a0a0a;
   color: var(--color-white);
   padding: 4rem 0;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .section-header {

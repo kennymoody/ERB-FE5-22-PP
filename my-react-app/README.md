@@ -19,3 +19,57 @@ If you are developing a production application, we recommend using TypeScript wi
 
 React Router Setup
 https://www.youtube.com/watch?v=c02YoWR9gSY
+
+
+
+npm country flag for Windows Fix
+https://www.npmjs.com/package/country-flag-icons
+
+Temp code
+// data.js
+export const users = [
+  { id: 1, name: 'Alice', country: 'US' },
+  { id: 2, name: 'Bob', country: 'FR' },
+  { id: 3, name: 'Charlie', country: 'JP' }
+]
+
+import React from 'react'
+import { users } from './data' // 匯入你的資料
+import Flags from 'country-flag-icons/react/3x2'
+
+const UserList = () => {
+  return (
+    <ul>
+      {users.map(user => {
+        // 1. 根據資料中的 country 代碼找到對應的組件
+        const FlagComponent = Flags[user.country]
+
+        return (
+          <li key={user.id} style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+            <span>{user.name}</span>
+            {/* 2. 檢查組件是否存在，存在才渲染 */}
+            {FlagComponent ? (
+              <FlagComponent title={user.country} style={{ width: '30px' }} />
+            ) : (
+              <span>(No Flag)</span>
+            )}
+          </li>
+        )
+      })}
+    </ul>
+  )
+}
+
+export default UserList
+
+
+Cloudinary
+https://cloudinary.com/guides/video-effects/how-to-create-a-video-overlay-in-react
+https://cloudinary.com/documentation/react_video_transformations
+
+
+
+--------------- for Exam ---------------
+Remember SaaS , Paas and Iaas !!!!!
+
+Public Cloud , Private Cloud , Hybid Cloud

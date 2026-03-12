@@ -2,6 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./CSS/styleV2.css";
 import App from "./App.jsx";
+import Kyoto from "./Kyoto.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
@@ -11,7 +12,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/kyoto/",
-    element: <kyoto />,
+    element: <Kyoto />,
   },
   {
     path: "/rome/",
