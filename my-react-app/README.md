@@ -73,3 +73,24 @@ https://cloudinary.com/documentation/react_video_transformations
 Remember SaaS , Paas and Iaas !!!!!
 
 Public Cloud , Private Cloud , Hybid Cloud
+
+
+
+
+
+
+------------------------------------
+TODO:
+
+1. LocationAttraction.jsx > Fix get json data issue , also Grid issue
+2. input all the data to json
+3. image for plug / script for multi plug
+<!-- 4. image for currency -->
+5. gallery popup image with Click , can close , can next or prev
+6. Weather Widget change to React version
+7. Currency Converter not work , need fix
+idea - get the convert ratio from frankfurter api , then you can do the calculation. by using the original converter layout
+8. theme text color check
+9. fix youtube playback issue
+10. fix map issue
+11. replace pic from picsum to cloudiary if possible

@@ -260,7 +260,11 @@ nav.nav-scrolled .mobile-menu-toggle {
   position: absolute;
   inset: 0;
   /* background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)); */
-  background: radial-gradient(circle,rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 100%);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
   z-index: 0;
 }
 
@@ -700,8 +704,8 @@ footer {
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-/* Section - Parrot */
-.parrot-section {
+/* Section - Animal */
+.animal-section {
   background: #fdf2f2;
   padding: 40px;
   border-radius: 32px;
@@ -713,18 +717,18 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .parrot-section {
+  .animal-section {
     grid-template-columns: 1fr;
     padding: 30px;
     gap: 20px;
   }
 
-  .parrot-image {
+  .animal-image {
     height: 250px;
   }
 }
 
-.parrot-image {
+.animal-image {
   width: 100%;
   height: 300px;
   object-fit: cover;
@@ -732,7 +736,7 @@ footer {
   box-shadow: var(--shadow-light);
 }
 
-.parrot-info h3 {
+.animal-info h3 {
   color: #991b1b;
   margin-bottom: 1rem;
 }
@@ -743,6 +747,7 @@ footer {
   grid-template-columns: 1fr 1fr;
   gap: 15px;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .info-card {
@@ -776,9 +781,7 @@ footer {
 }
 
 .plug-icon {
-  width: 30px;
-  height: 30px;
-  margin-bottom: 5px;
+  width: 50px;
 }
 
 /* Section - Interactive Checklist */
@@ -786,7 +789,7 @@ footer {
   background: var(--color-white);
   padding: 30px;
   border-radius: 24px;
-  margin-top: 3rem;
+  margin: 0 3rem;
   box-shadow: var(--shadow-light);
 }
 
@@ -1030,6 +1033,7 @@ footer {
 .theme-kyoto .detail-hero {
   background-blend-mode: multiply;
   background-color: rgba(188, 71, 73, 0.2);
+  background-image: url("https://picsum.photos/seed/kyoto-hero/1920/1080");
 }
 .theme-kyoto .main-content h2 {
   border-left: 4px solid var(--color-primary);
@@ -1052,6 +1056,12 @@ footer {
   --bg: #f8f9fa; /* Marble White */
   background-color: var(--bg);
 }
+
+.theme-rome .detail-hero {
+  background-blend-mode: multiply;
+  background-image: url("https://picsum.photos/seed/rome-hero/1920/1080");
+}
+
 .theme-rome .detail-hero h1 {
   text-transform: uppercase;
   letter-spacing: 0.2em;
@@ -1085,7 +1095,7 @@ footer {
   background-color: var(--bg);
 }
 .theme-cusco .detail-hero {
-  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  background-image: url("https://picsum.photos/seed/cusco-hero/1920/1080");
 }
 .theme-cusco .main-content section {
   background: #fff;
@@ -1115,6 +1125,7 @@ footer {
 }
 .theme-cairo .detail-hero {
   background-attachment: fixed;
+  background-image: url("https://picsum.photos/seed/cairo-hero/1920/1080");
 }
 .theme-cairo .main-content h2 {
   color: var(--color-primary);
@@ -1195,10 +1206,29 @@ footer {
 }
 
 .theme-tips .checklist-container p {
-  color: rgba(255, 255, 255, 0.6) !important;
+  color: var(--color-text-light);
+  margin-bottom: 2rem;
 }
 
-.theme-tips .tips-hero {
+.theme-tips .checklist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px 40px;
+}
+
+.theme-tips .checklist-resetbtn {
+  margin-top: 2rem;
+  text-align: right;
+  .btn {
+    padding: 10px 20px;
+    font-size: 0.8rem;
+    background: #f3f4f6;
+    color: var(--color-text);
+    box-shadow: none;
+  }
+}
+
+.theme-tips .detail-hero {
   height: 40vh;
   background:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
@@ -1212,25 +1242,27 @@ footer {
   text-align: center;
 }
 
-.theme-tips .tips-hero h1 {
+.theme-tips .detail-hero .detail-hero-content h1 {
   font-size: 3.5rem;
   font-family: var(--font-secondary);
   margin-bottom: 1rem;
 }
 
-.theme-tips .tips-hero p {
+.theme-tips .detail-hero .detail-hero-content p {
   font-size: 1.1rem;
   opacity: 0.8;
   max-width: 600px;
 }
 
 .theme-tips .tips-grid {
-  padding-top: 6rem;
+  padding-top: 3rem;
   padding-bottom: 6rem;
 }
 
 .theme-tips .checklist-container h2 {
-  color: var(--color-primary-light) !important;
+  color: var(--color-primary-light);
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 /* Media Queries */

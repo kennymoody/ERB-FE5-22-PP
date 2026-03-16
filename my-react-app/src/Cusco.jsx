@@ -6,9 +6,6 @@ import LocationIntro from "./components/LocationIntro";
 import LocationAnimal from "./components/LocationAnimal";
 import LocationAttraction from "./components/LocationAttraction";
 import LocationGallery from "./components/LocationGallery";
-import LocationLocalTips from "./components/LocationLocalTips";
-import LocationMap from "./components/LocationMap";
-import LocationSideBar from "./components/LocationSideBar";
 import About from "./components/About";
 import Services from "./components/Services";
 import Tours from "./components/Tours";
@@ -16,33 +13,28 @@ import Country from "./components/CountryV2";
 import Footer from "./components/Footer";
 // import "./CSS/styleV2.css";
 
-function Kyoto() {
+function Cusco() {
   const [count, setCount] = useState(0);
   return (
     <React.Fragment>
       <NavBar />
-      <div className="page theme-kyoto">
+      <div className="page theme-cusco">
         <Hero />
-        <div className="container">
-          <div className="main-content">
-            <LocationIntro />
-            <LocationVideo />
-            <LocationAnimal />
-            <LocationAttraction />
-            <LocationGallery />
-            <LocationLocalTips />
-            <LocationMap />
-          </div>
-          <LocationSideBar />
-          {/* <Country /> */}
-          {/* <About /> */}
-          {/* <Services /> */}
-          {/* <Tours /> */}
+        <div class="main-content">
+          <LocationIntro />
+          <LocationVideo />
+          <LocationAnimal />
+          <LocationAttraction />
+          <LocationGallery />
         </div>
+        {/* <Country /> */}
+        {/* <About /> */}
+        {/* <Services /> */}
+        {/* <Tours /> */}
       </div>
       {/* <Footer /> */}
     </React.Fragment>
   );
 }
 
-export default Kyoto;
+export default Cusco;
