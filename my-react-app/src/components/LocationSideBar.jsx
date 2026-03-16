@@ -15,7 +15,7 @@ const LocationSideBar = () => {
   const selectedId = url.pathname;
   const location = locations.find((item) => item.path === selectedId);
 
-  console.log(location);
+  // console.log(location);
   return (
     <aside className="sidebar">
       <h3>Traveler's Guide</h3>

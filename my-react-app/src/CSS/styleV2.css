@@ -610,7 +610,7 @@ nav.nav-scrolled .mobile-menu-toggle {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
-  padding: 4rem 20px;
+  padding: 2rem 20px;
 }
 
 .tip-card {
@@ -789,8 +789,13 @@ footer {
   background: var(--color-white);
   padding: 30px;
   border-radius: 24px;
-  margin: 0 3rem;
+  margin: 0 auto;
+  /* margin-left: 30px;
+  margin-right:30px; */
+  /* margin: 0 3rem; */
   box-shadow: var(--shadow-light);
+  width: 95%;
+  max-width: 870px;
 }
 
 .checklist-item {
@@ -962,11 +967,15 @@ footer {
   color: var(--color-primary);
 }
 
-.tips-grid {
+.traveltips-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
   margin-top: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  padding: 2rem 20px;
 }
 
 .tip-item h4 {

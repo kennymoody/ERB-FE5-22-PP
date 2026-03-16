@@ -173,7 +173,7 @@ export const locations = [
     path: "/kyoto/",
     title: "kyoto",
     imagesrc: "https://picsum.photos/seed/kyoto/800/1200",
-    video: "https://www.youtube.com/embed/2nd_v997E-M",
+    video: "https://www.youtube.com/embed/3gX-umzVl9s?si=Wq1GZP3pn2nQXeSI",
     videotitle: "Kyoto Travel Video",
     introh1: "A Legacy Through Time",
     introp: `Kyoto served as Japan's imperial capital for over a millennium
@@ -187,8 +187,7 @@ export const locations = [
         gardens. They are often seen nesting in old trees near shrines.`,
     animalwhere:
       "Look up in the large camphor trees near the Heian Shrine or the outskirts of Arashiyama.",
-    maplink:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m13!1m3!1d104597.38794833215!2d135.68361044702148!3d35.011636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001a8d6cd3d3f01%3A0x108aa92723bc5677!2sKyoto%2C%20Japan!5e0!3m2!1sen!2sus!4v1700000000000",
+    maplink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d417835.64227443415!2d135.71886944999997!3d35.09819619999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001a8d6cd3cc3f1%3A0xc0961d366bbb1d3d!2sKyoto%2C%20Japan!5e0!3m2!1sen!2shk!4v1773651796827!5m2!1sen!2shk",
     besttime: "Spring (Cherry Blossoms) or Autumn (Fall Colors)",
     voltage: "100V / 50-60Hz",
     plug: "Type A / B",
@@ -197,9 +196,6 @@ export const locations = [
     currency: "Japanese Yen (JPY)",
     lang: "Japanese",
     gettingaround: "Excellent bus and subway network; very walkable.",
-    currentpath: "../kyotoV2",
-    herotitle: "Japan - Kyoto",
-    herodetails: "explore japan",
   },
   {
     id: 2,
@@ -516,5 +512,5 @@ export const traveltipschecklist = [
   {
     id: 10,
     title: "Comfortable Walking Shoes",
-  }
+  },
 ];

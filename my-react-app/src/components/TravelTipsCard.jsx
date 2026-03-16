@@ -5,7 +5,7 @@ const TravelTipsCard = () => {
   const { tipscard } = useContext(DataContext);
   //   console.log(tipscard);
   return (
-    <div className="tips-grid">
+    <div className="traveltips-grid">
       {tipscard.map((item) => (
         <div className="tip-card" key={item.id}>
           <h3>{item.title}</h3>

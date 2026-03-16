@@ -91,6 +91,7 @@ TODO:
 7. Currency Converter not work , need fix
 idea - get the convert ratio from frankfurter api , then you can do the calculation. by using the original converter layout
 8. theme text color check
-9. fix youtube playback issue
-10. fix map issue
+<!-- 9. fix youtube playback issue -->
+<!-- 10. fix map issue -->
 11. replace pic from picsum to cloudiary if possible
+<!-- 12. fixed still can scroll issue when mobile menu activated -->
