@@ -6,7 +6,6 @@ import SideBarLang from "./SideBarLang";
 import SideBarGettingAround from "./SideBarGettingAround";
 import SideBarWeather from "./SideBarWeather";
 import SideBarCurrencyConverter from "./SideBarCurrencyConverter";
-import SideBarCurrencyConverterTemp from "./SideBarCurrencyConverterTemp";
 
 
 const LocationSideBar = () => {
@@ -25,7 +24,6 @@ const LocationSideBar = () => {
       <SideBarGettingAround {...location} />
       <SideBarWeather {...location} />
       <SideBarCurrencyConverter {...location} />
-      {/* <SideBarCurrencyConverterTemp {...location} /> */}
     </aside>
   );
 };

@@ -1,83 +1,3 @@
-export const services = [
-  {
-    id: 1,
-    icon: "fa-solid fa-wallet",
-    info: "Saving Money",
-    text: "Lorem ipsum dolor, sit amet consectetur",
-  },
-  {
-    id: 2,
-    icon: "fa-solid fa-tree",
-    info: "Endless Hiking",
-    text: "Lorem ipsum dolor, sit amet consectetur",
-  },
-  {
-    id: 3,
-    icon: "fa-solid fa-socks",
-    info: "Amazing Comfort",
-    text: "Lorem ipsum dolor, sit amet consectetur",
-  },
-];
-
-import tour1 from "./src/assets/IMG/tibet.jpg";
-import tour2 from "./src/assets/IMG/southkorea.jpg";
-import tour3 from "./src/assets/IMG/london.jpg";
-import tour4 from "./src/assets/IMG/newyork.webp";
-import tour5 from "./src/assets/IMG/paris.jpg";
-
-export const tours = [
-  {
-    id: 1,
-    image: tour1,
-    date: "Sep 21st, 2026",
-    title: "Tibet Adventure",
-    info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, voluptate.",
-    location: "China",
-    days: "6 days",
-    price: "from $4000",
-  },
-  {
-    id: 2,
-    image: tour2,
-    date: "Aug 21st, 2026",
-    title: "Seoul Adventure",
-    info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, voluptate.",
-    location: "South Korea",
-    days: "7 days",
-    price: "from $8000",
-  },
-  {
-    id: 3,
-    image: tour3,
-    date: "Dec 21st, 2026",
-    title: "London Adventure",
-    info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, voluptate.",
-    location: "UK",
-    days: "10 days",
-    price: "from $12000",
-  },
-  {
-    id: 4,
-    image: tour4,
-    date: "Dec 21st, 2026",
-    title: "New York Adventure",
-    info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, voluptate.",
-    location: "USA",
-    days: "10 days",
-    price: "from $18000",
-  },
-  {
-    id: 5,
-    image: tour5,
-    date: "Dec 21st, 2026",
-    title: "Paris Adventure",
-    info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, voluptate.",
-    location: "France",
-    days: "3 weeks",
-    price: "from $30K",
-  },
-];
-
 export const menuLists = [
   {
     id: 1,
@@ -172,7 +92,7 @@ export const locations = [
     flag: "JP",
     path: "/kyoto/",
     title: "kyoto",
-    imagesrc: "https://picsum.photos/seed/kyoto/800/1200",
+    imagesrc: "https://images.unsplash.com/photo-1505069446780-4ef442b5207f?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     video: "https://www.youtube.com/embed/3gX-umzVl9s?si=Wq1GZP3pn2nQXeSI",
     videotitle: "Kyoto Travel Video",
     introh1: "A Legacy Through Time",
@@ -210,34 +130,30 @@ export const locations = [
     flag: "IT",
     path: "/rome/",
     title: "rome",
-    imagesrc: "https://picsum.photos/seed/rome/800/1200",
-    video: "https://www.youtube.com/embed/2nd_v997E-M",
-    videotitle: "Kyoto Travel Video",
-    introh1: "A Legacy Through Time",
-    introp: `Kyoto served as Japan's imperial capital for over a millennium
-        (794–1868). It was spared from much of the destruction of WWII,
-        preserving its countless historical treasures. The city was originally
-        modeled after the Tang dynasty capital of Chang'an.`,
-    animalimage: "https://picsum.photos/seed/parrot-japan/600/600",
-    animaltitle: "Local Avian Life: Rose-ringed Parakeet",
-    animalinfo: `While not native, these vibrant green parakeets have established a
-        significant population in Japan's urban areas, including Kyoto's temple
-        gardens. They are often seen nesting in old trees near shrines.`,
+    imagesrc: "https://images.unsplash.com/photo-1491566102020-21838225c3c8?q=80&w=661&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    video: "https://www.youtube.com/embed/e6ZtmXxStMY?si=SuhLSIaTCQ18-rqT",
+    videotitle: "Rome Travel Video",
+    introh1: "The Eternal City",
+    introp: `Founded in 753 BC, Rome was the center of the Roman Empire, which dominated the Mediterranean for centuries. It later became the heart of the Catholic Church and a major center of the Renaissance.`,
+    animalimage: "https://picsum.photos/seed/parrot-rome/600/600",
+    animaltitle: "Local Avian Life: Monk Parakeet",
+    animalinfo: `Rome has become home to large colonies of Monk Parakeets (Quakers). These bright green birds build massive communal nests in the city's pine trees and are known for their loud, social nature.`,
     animalwhere:
-      "Look up in the large camphor trees near the Heian Shrine or the outskirts of Arashiyama.",
-    maplink:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m13!1m3!1d104597.38794833215!2d135.68361044702148!3d35.011636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001a8d6cd3d3f01%3A0x108aa92723bc5677!2sKyoto%2C%20Japan!5e0!3m2!1sen!2sus!4v1700000000000",
-    besttime: "Spring (Cherry Blossoms) or Autumn (Fall Colors)",
-    voltage: "100V / 50-60Hz",
-    plug: "Type A / B",
-    plugimgsrc: plugtypea,
-    avgtemp: "15°C - 22°C",
-    currency: "Japanese Yen (JPY)",
-    lang: "Japanese",
-    gettingaround: "Excellent bus and subway network; very walkable.",
+      "Visit the Villa Borghese gardens or the parks around the Appian Way to see them in action.",
+    maplink: `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d190028.7643209635!2d12.5359979!3d41.9100711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f6196f9928ebb%3A0xb90f770693656e38!2sRome%2C%20Metropolitan%20City%20of%20Rome%20Capital%2C%20Italy!5e0!3m2!1sen!2shk!4v1773737458612!5m2!1sen!2shk`,
+    besttime: "April to June or September to October",
+    voltage: "230V / 50Hz",
+    plug: "Type C / F / L",
+    plugimgsrc: plugtypec,
+    avgtemp: "18°C - 28°C",
+    currency: "Euro (EUR)",
+    lang: "Italian",
+    gettingaround: "Metro, buses, and trams; best explored on foot.",
     weathertitle: "Rome, IT",
     weatherlat: "41.9099",
     weatherlon: "12.4964",
+    currencyto: "EUR",
+    currencyfrom: "HKD",
   },
   {
     id: 3,
@@ -246,34 +162,31 @@ export const locations = [
     flag: "PE",
     path: "/cusco/",
     title: "cusco",
-    imagesrc: "https://picsum.photos/seed/cusco/800/1200",
-    video: "https://www.youtube.com/embed/2nd_v997E-M",
-    videotitle: "Kyoto Travel Video",
-    introh1: "A Legacy Through Time",
-    introp: `Kyoto served as Japan's imperial capital for over a millennium
-        (794–1868). It was spared from much of the destruction of WWII,
-        preserving its countless historical treasures. The city was originally
-        modeled after the Tang dynasty capital of Chang'an.`,
-    animalimage: "https://picsum.photos/seed/parrot-japan/600/600",
-    animaltitle: "Local Avian Life: Rose-ringed Parakeet",
-    animalinfo: `While not native, these vibrant green parakeets have established a
-        significant population in Japan's urban areas, including Kyoto's temple
-        gardens. They are often seen nesting in old trees near shrines.`,
+    imagesrc: "https://images.unsplash.com/photo-1578362646678-a1b282e43ff8?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    video: "https://www.youtube.com/embed/WtNv2QDZpdw?si=xAqlFOcGv9ZFiF1s",
+    videotitle: "Cusco Travel Video",
+    introh1: "Capital of the Inca",
+    introp: `Cusco was the religious and administrative center of the Inca Empire. After the Spanish conquest, many colonial buildings were built directly on top of Inca stone foundations, creating a unique architectural hybrid.`,
+    animalimage: "https://picsum.photos/seed/parrot-cusco/600/600",
+    animaltitle: "Local Avian Life: Mitred Parakeet",
+    animalinfo: `The Mitred Parakeet is a stunning bird with a distinctive red face. They are native to the Andes and are frequently seen in large, noisy flocks flying over the Sacred Valley near Cusco.`,
     animalwhere:
-      "Look up in the large camphor trees near the Heian Shrine or the outskirts of Arashiyama.",
+      "They are common in the Urubamba Valley and can often be spotted in the trees around the ruins of Ollantaytambo.",
     maplink:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m13!1m3!1d104597.38794833215!2d135.68361044702148!3d35.011636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001a8d6cd3d3f01%3A0x108aa92723bc5677!2sKyoto%2C%20Japan!5e0!3m2!1sen!2sus!4v1700000000000",
-    besttime: "Spring (Cherry Blossoms) or Autumn (Fall Colors)",
-    voltage: "100V / 50-60Hz",
-    plug: "Type A / B",
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62065.47533544779!2d-71.98044863080358!3d-13.529932480267101!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x916dd5d826598431%3A0x2aa996cc2318315d!2sCusco%2C%20Peru!5e0!3m2!1sen!2shk!4v1773738914545!5m2!1sen!2shk",
+    besttime: "May to September (Dry Season)",
+    voltage: "220V / 60Hz",
+    plug: "Type A / C",
     plugimgsrc: plugtypea,
-    avgtemp: "15°C - 22°C",
-    currency: "Japanese Yen (JPY)",
-    lang: "Japanese",
-    gettingaround: "Excellent bus and subway network; very walkable.",
+    avgtemp: "10°C - 20°C",
+    currency: "Peruvian Sol (PEN)",
+    lang: "Spanish, Quechua",
+    gettingaround: "Walking in the city; Taxis for longer distances.",
     weathertitle: "Cusco, PE",
     weatherlat: "-13.5317",
     weatherlon: "-71.9667",
+    currencyto: "PEN",
+    currencyfrom: "HKD",
   },
   {
     id: 4,
@@ -282,34 +195,31 @@ export const locations = [
     flag: "EG",
     path: "/cairo/",
     title: "cairo",
-    imagesrc: "https://picsum.photos/seed/cairo/800/1200",
-    video: "https://www.youtube.com/embed/2nd_v997E-M",
-    videotitle: "Kyoto Travel Video",
-    introh1: "A Legacy Through Time",
-    introp: `Kyoto served as Japan's imperial capital for over a millennium
-        (794–1868). It was spared from much of the destruction of WWII,
-        preserving its countless historical treasures. The city was originally
-        modeled after the Tang dynasty capital of Chang'an.`,
-    animalimage: "https://picsum.photos/seed/parrot-japan/600/600",
+    imagesrc: "https://images.unsplash.com/photo-1559738933-d69ac3ff674b?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    video: "https://www.youtube.com/embed/oUFN7I67dIU?si=CWDbVNCUxe8w-K31",
+    videotitle: "Cairo Travel Video",
+    introh1: "Gateway to Antiquity",
+    introp: `Cairo has been a major center of Islamic culture for centuries. Nearby Giza is home to the only remaining wonder of the ancient world: the Great Pyramid of Khufu.`,
+    animalimage: "https://picsum.photos/seed/parrot-cairo/600/600",
     animaltitle: "Local Avian Life: Rose-ringed Parakeet",
-    animalinfo: `While not native, these vibrant green parakeets have established a
-        significant population in Japan's urban areas, including Kyoto's temple
-        gardens. They are often seen nesting in old trees near shrines.`,
+    animalinfo: `In Cairo, the Rose-ringed Parakeet is a common sight. These resilient birds thrive in the city's gardens and along the Nile, their bright green feathers contrasting with the desert-toned architecture.`,
     animalwhere:
-      "Look up in the large camphor trees near the Heian Shrine or the outskirts of Arashiyama.",
+      "Look for them in the Al-Azhar Park or the gardens of the Gezira Island in the early morning.",
     maplink:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m13!1m3!1d104597.38794833215!2d135.68361044702148!3d35.011636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001a8d6cd3d3f01%3A0x108aa92723bc5677!2sKyoto%2C%20Japan!5e0!3m2!1sen!2sus!4v1700000000000",
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55251.33663491335!2d31.217264820551346!3d30.059556316618387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583fa60b21beeb%3A0x79dfb296e8423bba!2sCairo%2C%20Cairo%20Governorate%2C%20Egypt!5e0!3m2!1sen!2shk!4v1773740319301!5m2!1sen!2shk",
     besttime: "Spring (Cherry Blossoms) or Autumn (Fall Colors)",
-    voltage: "100V / 50-60Hz",
-    plug: "Type A / B",
-    plugimgsrc: plugtypea,
-    avgtemp: "15°C - 22°C",
-    currency: "Japanese Yen (JPY)",
-    lang: "Japanese",
-    gettingaround: "Excellent bus and subway network; very walkable.",
+    voltage: "220V / 50Hz",
+    plug: "Type C / F",
+    plugimgsrc: plugtypec,
+    avgtemp: "20°C - 35°C",
+    currency: "Egyptian Pound (EGP)",
+    lang: "Arabic",
+    gettingaround: "Metro, taxis, and ride-sharing apps like Uber.",
     weathertitle: "Cairo, EG",
     weatherlat: "30.044419",
     weatherlon: "31.188423",
+    currencyto: "EGP",
+    currencyfrom: "HKD",
   },
 ];
 
@@ -341,6 +251,34 @@ export const locationAttractionCards = [
     title: "Plaza de Armas",
     info: "The Plaza de Armas is a public square in Cusco, Peru, in the center of the city.",
     imagesrc: "https://picsum.photos/seed/plaza/600/400",
+  },
+  {
+    id: 5,
+    path: "/rome/",
+    title: "Colosseum",
+    info: "The largest ancient amphitheatre ever built, used for gladiatorial contests.",
+    imagesrc: "https://picsum.photos/seed/colosseum/600/400",
+  },
+  {
+    id: 6,
+    path: "/rome/",
+    title: "Vatican Museums",
+    info: "Home to the Sistine Chapel and some of the world's most important art.",
+    imagesrc: "https://picsum.photos/seed/vatican/600/400",
+  },
+  {
+    id: 7,
+    path: "/cairo/",
+    title: "Pyramids of Giza",
+    info: "The iconic tombs of the Pharaohs, guarded by the Great Sphinx.",
+    imagesrc: "https://picsum.photos/seed/pyramids/600/400",
+  },
+  {
+    id: 8,
+    path: "/cairo/",
+    title: "Egyptian Museum",
+    info: "Houses the world's most extensive collection of Pharaonic antiquities.",
+    imagesrc: "https://picsum.photos/seed/museum/600/400",
   },
 ];
 
@@ -417,6 +355,30 @@ export const locationGallery = [
     imagesrc: "https://picsum.photos/seed/cusco2/600/600",
     title: "Cusco Gallery",
   },
+  {
+    id: 13,
+    path: "/rome/",
+    imagesrc: "https://picsum.photos/seed/rome2/600/600",
+    title: "Rome Gallery",
+  },
+  {
+    id: 14,
+    path: "/rome/",
+    imagesrc: "https://picsum.photos/seed/rome3/600/600",
+    title: "Rome Gallery",
+  },
+  {
+    id: 15,
+    path: "/rome/",
+    imagesrc: "https://picsum.photos/seed/rome4/600/600",
+    title: "Rome Gallery",
+  },
+  {
+    id: 16,
+    path: "/cusco/",
+    imagesrc: "https://picsum.photos/seed/cusco1/600/600",
+    title: "Cusco Gallery",
+  },
 ];
 
 export const locationLocalTips = [
@@ -424,13 +386,13 @@ export const locationLocalTips = [
     id: 1,
     path: "/kyoto/",
     title: "🍱 Must-Try Dishes",
-    info: "Don't miss <strong>Kaiseki Ryori</strong>, Kyoto's refined multi-course dining. For a quick treat, try <strong>Matcha-flavored sweets</strong> in Uji or <strong>Yudofu</strong> (tofu hot pot) near Nanzen-ji temple.sit amet consectetur adipisicing elit. Quisquam, quod.",
+    info: "Don't miss Kaiseki Ryori, Kyoto's refined multi-course dining. For a quick treat, try Matcha-flavored sweets in Uji or Yudofu (tofu hot pot) near Nanzen-ji temple.sit amet consectetur adipisicing elit. Quisquam, quod.",
   },
   {
     id: 2,
     path: "/kyoto/",
     title: "🚌 Getting Around",
-    info: "Kyoto's bus network is extensive. A <strong>one-day bus pass</strong> is highly recommended. For a unique perspective, <strong>rent a bicycle</strong> to navigate the flat city streets and scenic river paths.",
+    info: "Kyoto's bus network is extensive. A one-day bus pass is highly recommended. For a unique perspective, rent a bicycle to navigate the flat city streets and scenic river paths.",
   },
   {
     id: 3,
@@ -443,6 +405,42 @@ export const locationLocalTips = [
     path: "/kyoto/",
     title: "🎉 Events and Festivals",
     info: "Kyoto hosts a variety of festivals and events, including the Kyoto Festival, the Kyoto International Film Festival, and the Kyoto International Music Festival.",
+  },
+  {
+    id: 5,
+    path: "/rome/",
+    title: "🍝 Must-Try Dishes",
+    info: "Indulge in authentic Carbonara or Cacio e Pepe. For a street snack, grab a Supplì (fried rice ball) and finish with artisanal Gelato from a local gelateria.",
+  },
+  {
+    id: 6,
+    path: "/rome/",
+    title: "🚶 Getting Around",
+    info: "The best way to experience Rome is on foot. The historic center is mostly walkable. Use the Metro for longer distances, but be mindful of your belongings in crowded tourist areas.",
+  },
+  {
+    id: 7,
+    path: "/cusco/",
+    title: "🥘 Must-Try Dishes",
+    info: "Try Lomo Saltado (stir-fried beef) or Alpaca steak for a local specialty. To combat altitude sickness, sip on Coca tea, which is readily available in most hotels and cafes.",
+  },
+  {
+    id: 8,
+    path: "/cusco/",
+    title: "🚐 Getting Around",
+    info: "Use colectivos (shared vans) for affordable travel to the Sacred Valley. Within Cusco, the city center is best explored on foot, though be prepared for steep cobblestone streets.",
+  },
+  {
+    id: 9,
+    path: "/cairo/",
+    title: "🍲 Must-Try Dishes",
+    info: "Sample Koshary, Egypt's beloved national dish of lentils, rice, and pasta. For breakfast, try Ta'ameya (Egyptian falafel) and end your meal with Om Ali, a warm bread pudding."
+  },
+  {
+    id: 10,
+    path: "/cairo/",
+    title: "🚘 Getting Around",
+    info: "Use Uber or Careem for reliable, fixed-price transportation. The Cairo Metro is an efficient way to bypass heavy traffic, though it can be very crowded during peak hours."
   },
 ];
 

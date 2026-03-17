@@ -77,6 +77,12 @@ Public Cloud , Private Cloud , Hybid Cloud
 
 
 
+useful link:
+
+https://www.designrift.dev/
+https://uicolors.app/generate/fcb80c
+
+
 
 
 ------------------------------------
@@ -87,11 +93,19 @@ TODO:
 3. image for plug / script for multi plug
 <!-- 4. image for currency -->
 5. gallery popup image with Click , can close , can next or prev
-6. Weather Widget change to React version
-7. Currency Converter not work , need fix
+<!-- 6. Weather Widget change to React version -->
+<!-- 7. Currency Converter not work , need fix -->
 idea - get the convert ratio from frankfurter api , then you can do the calculation. by using the original converter layout
 8. theme text color check
-<!-- 9. fix youtube playback issue -->
+9. fix youtube playback issue - fix in all page
 <!-- 10. fix map issue -->
 11. replace pic from picsum to cloudiary if possible
 <!-- 12. fixed still can scroll issue when mobile menu activated -->
+<!-- 13. title -->
+14. favicon
+15. mediaquery
+<!-- 16. clear old files -->
+17. footer page - social link list, intro page link , email
+18. intro page ( about me )
+19. chagne some location font from primary to secondary
+20. change to correct picsum photo

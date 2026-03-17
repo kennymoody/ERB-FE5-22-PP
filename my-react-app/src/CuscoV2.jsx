@@ -10,10 +10,8 @@ import LocationGallery from "./components/LocationGalleryV2";
 import LocationLocalTips from "./components/LocationLocalTips";
 import LocationMap from "./components/LocationMap";
 import LocationSideBar from "./components/LocationSideBar";
-import About from "./components/About";
-import Services from "./components/Services";
-import Tours from "./components/Tours";
 import Country from "./components/CountryV2";
+import FooterContent from "./components/FooterContent";
 import Footer from "./components/Footer";
 import * as allData from "../dataV2";
 
@@ -56,13 +54,10 @@ function Cusco() {
               <LocationMap />
             </div>
             <LocationSideBar />
-            {/* <Country /> */}
-            {/* <About /> */}
-            {/* <Services /> */}
-            {/* <Tours /> */}
           </div>
         </div>
-        {/* <Footer /> */}
+        <FooterContent />
+        <Footer />
       </DataContext.Provider>
     </React.Fragment>
   );

@@ -12,8 +12,8 @@ const LocationLocalTips = () => {
       <h2>Local Insights</h2>
       <div className="tips-grid">
         {filteredLocalTips.map((location) => (
-          <div className="tip-item">
-            <h4 key={location.id}>{location.title}</h4>
+          <div className="tip-item" key={location.id}>
+            <h4>{location.title}</h4>
             <p>{location.info}</p>
           </div>
         ))}

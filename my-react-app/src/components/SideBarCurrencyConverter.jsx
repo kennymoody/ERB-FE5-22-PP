@@ -1,19 +1,23 @@
 import React, { useEffect, useState } from "react";
 
 const SideBardCurrencyConverter = ({ currencyfrom, currencyto, currency }) => {
-  const base_url = "https://api.frankfurter.dev/v1/latest?";
+  // const base_url = "https://api.frankfurter.dev/v1/latest?";
+  const base_url = "https://api.exchangerate.fun/latest?";
+
   const [exchangeRate, setExchangeRate] = useState(null);
   const [amount, setAmount] = useState(1);
   const [isFrom, setIsFrom] = useState(true);
   const fetchData = async () => {
     try {
       let res = await fetch(
-        `${base_url}base=${currencyfrom}&symbols=${currencyto}`,
+        // `${base_url}base=${currencyfrom}&symbols=${currencyto}`,
+        `${base_url}base=${currencyfrom}`,
+
       );
       if (!res.ok) throw new Error("API error");
 
       let jsondata = await res.json();
-      console.log(jsondata);
+      // console.log(jsondata);
 
       setExchangeRate(jsondata.rates[currencyto]);
     } catch (error) {
@@ -24,7 +28,6 @@ const SideBardCurrencyConverter = ({ currencyfrom, currencyto, currency }) => {
   useEffect(() => {
     fetchData();
   }, []);
-
 
   let fromAmount, toAmount;
   if (isFrom) {
@@ -73,7 +76,7 @@ const SideBardCurrencyConverter = ({ currencyfrom, currencyto, currency }) => {
         </div>
       </div>
       <div className="exchange-rate-info" id="rateInfo">
-       1 HKD = {exchangeRate.toFixed(2)} {currencyto}
+        HKD$ 1 = {exchangeRate.toFixed(2)} {currencyto}
       </div>
     </div>
   );
