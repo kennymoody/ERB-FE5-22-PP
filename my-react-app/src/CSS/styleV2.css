@@ -509,7 +509,7 @@ nav.nav-scrolled .mobile-menu-toggle {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 6rem 20px;
+  padding: 4rem 2rem;
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 80px;
@@ -854,6 +854,10 @@ footer {
   margin: 0;
 }
 
+.weather-header span {
+  font-size: 0.7rem;
+  color: var(--color-text-light);
+}
 .current-weather {
   display: flex;
   align-items: center;
@@ -1310,18 +1314,6 @@ footer {
   .card {
     height: 500px;
   }
-
-  /* Hamburger Animation to X
-  .menu-toggle.active span:nth-child(1) {
-    transform: translateY(7px) rotate(45deg);
-  }
-  .menu-toggle.active span:nth-child(2) {
-    opacity: 0;
-    transform: translateX(-10px);
-  }
-  .menu-toggle.active span:nth-child(3) {
-    transform: translateY(-7px) rotate(-45deg);
-  } */
 
   .hero h1 {
     font-size: 3.5rem;

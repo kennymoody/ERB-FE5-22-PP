@@ -187,7 +187,8 @@ export const locations = [
         gardens. They are often seen nesting in old trees near shrines.`,
     animalwhere:
       "Look up in the large camphor trees near the Heian Shrine or the outskirts of Arashiyama.",
-    maplink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d417835.64227443415!2d135.71886944999997!3d35.09819619999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001a8d6cd3cc3f1%3A0xc0961d366bbb1d3d!2sKyoto%2C%20Japan!5e0!3m2!1sen!2shk!4v1773651796827!5m2!1sen!2shk",
+    maplink:
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d417835.64227443415!2d135.71886944999997!3d35.09819619999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001a8d6cd3cc3f1%3A0xc0961d366bbb1d3d!2sKyoto%2C%20Japan!5e0!3m2!1sen!2shk!4v1773651796827!5m2!1sen!2shk",
     besttime: "Spring (Cherry Blossoms) or Autumn (Fall Colors)",
     voltage: "100V / 50-60Hz",
     plug: "Type A / B",
@@ -196,6 +197,11 @@ export const locations = [
     currency: "Japanese Yen (JPY)",
     lang: "Japanese",
     gettingaround: "Excellent bus and subway network; very walkable.",
+    weathertitle: "Kyoto, JP",
+    weatherlat: "35.0116",
+    weatherlon: "135.7683",
+    currencyto: "JPY",
+    currencyfrom: "HKD",
   },
   {
     id: 2,
@@ -229,7 +235,9 @@ export const locations = [
     currency: "Japanese Yen (JPY)",
     lang: "Japanese",
     gettingaround: "Excellent bus and subway network; very walkable.",
-    currentpath: "../romeV2",
+    weathertitle: "Rome, IT",
+    weatherlat: "41.9099",
+    weatherlon: "12.4964",
   },
   {
     id: 3,
@@ -263,7 +271,9 @@ export const locations = [
     currency: "Japanese Yen (JPY)",
     lang: "Japanese",
     gettingaround: "Excellent bus and subway network; very walkable.",
-    currentpath: "../cuscoV2",
+    weathertitle: "Cusco, PE",
+    weatherlat: "-13.5317",
+    weatherlon: "-71.9667",
   },
   {
     id: 4,
@@ -297,7 +307,9 @@ export const locations = [
     currency: "Japanese Yen (JPY)",
     lang: "Japanese",
     gettingaround: "Excellent bus and subway network; very walkable.",
-    currentpath: "../cairoV2",
+    weathertitle: "Cairo, EG",
+    weatherlat: "30.044419",
+    weatherlon: "31.188423",
   },
 ];
 
