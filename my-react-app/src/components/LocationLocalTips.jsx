@@ -1,17 +1,13 @@
-import React from "react";
-import { locationLocalTips } from "../../dataV2";
+import React, { useContext } from "react";
+import { DataContext } from "../../src/ContentData";
 const LocationLocalTips = () => {
-  const url = new URL(window.location.href);
-  const selectedId = url.pathname;
-  const filteredLocalTips = locationLocalTips.filter(
-    (location) => location.path === selectedId,
-  );
+  const { locationInsight } = useContext(DataContext);
   //   console.log(filteredLocalTips);
   return (
     <section className="local-tips">
       <h2>Local Insights</h2>
       <div className="tips-grid">
-        {filteredLocalTips.map((location) => (
+        {locationInsight.map((location) => (
           <div className="tip-item" key={location.id}>
             <h4>{location.title}</h4>
             <p>{location.info}</p>

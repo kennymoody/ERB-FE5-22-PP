@@ -29,6 +29,9 @@ function Cusco() {
   const currentLocationCard = data.locationAttractionCards.filter(
     (loc) => loc.path === currentPath,
   );
+    const currentlocationInsight = data.locationInsights.filter(
+    (loc) => loc.path === currentPath,
+  );
   // console.log(currentHero);
 
   const contextValue = {
@@ -37,6 +40,7 @@ function Cusco() {
     gallery: currentGallery,
     subHero: currentHero,
     locationCard: currentLocationCard,
+        locationInsight: currentlocationInsight,
   };
 
   return (
@@ -48,11 +52,11 @@ function Cusco() {
           <div className="container">
             <div className="main-content">
               <LocationIntro />
-              <LocationVideo />
-              <LocationAnimal />
               <LocationAttraction />
               <LocationGallery />
+              <LocationVideo />
               <LocationLocalTips />
+              <LocationAnimal />
               <LocationMap />
             </div>
             <LocationSideBar />

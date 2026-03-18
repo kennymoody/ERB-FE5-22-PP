@@ -1,10 +1,7 @@
-import React from "react";
-import { locations } from "../../dataV2";
-
+import React, { useContext } from "react";
+import { DataContext } from "../../src/ContentData";
 const LocationAnimal = () => {
-  const url = new URL(window.location.href);
-  const selectedId = url.pathname;
-  const location = locations.find((item) => item.path === selectedId);
+  const { location } = useContext(DataContext);
   return (
     <section className="animal-section">
       <img src={location.animalimage} className="animal-image" />

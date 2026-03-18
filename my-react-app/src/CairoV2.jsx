@@ -29,6 +29,10 @@ function Cairo() {
   const currentLocationCard = data.locationAttractionCards.filter(
     (loc) => loc.path === currentPath,
   );
+    const currentlocationInsight = data.locationInsights.filter(
+    (loc) => loc.path === currentPath,
+  );
+
 
   const contextValue = {
     allData: data,
@@ -36,6 +40,7 @@ function Cairo() {
     gallery: currentGallery,
     subHero: currentHero,
     locationCard: currentLocationCard,
+        locationInsight: currentlocationInsight,
   };
   return (
     <React.Fragment>
@@ -45,11 +50,11 @@ function Cairo() {
           <Hero />
           <div className="container">
             <div className="main-content">
-              <LocationVideo />
               <LocationIntro />
-              <LocationAnimal />
+              <LocationVideo />
               <LocationAttraction />
               <LocationGallery />
+              <LocationAnimal />
               <LocationLocalTips />
               <LocationMap />
             </div>

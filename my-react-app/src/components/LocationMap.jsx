@@ -1,9 +1,7 @@
-import React from "react";
-import { locations } from "../../dataV2";
+import React, { useContext } from "react";
+import { DataContext } from "../../src/ContentData";
 const LocationMap = () => {
-  const url = new URL(window.location.href);
-  const selectedId = url.pathname;
-  const location = locations.find((item) => item.path === selectedId);
+  const { location } = useContext(DataContext);
   return (
     <section>
       <h2>Location Map</h2>

@@ -29,6 +29,10 @@ function Rome() {
   const currentLocationCard = data.locationAttractionCards.filter(
     (loc) => loc.path === currentPath,
   );
+    const currentlocationInsight = data.locationInsights.filter(
+    (loc) => loc.path === currentPath,
+  );
+
 
   const contextValue = {
     allData: data,
@@ -36,6 +40,7 @@ function Rome() {
     gallery: currentGallery,
     subHero: currentHero,
     locationCard: currentLocationCard,
+        locationInsight: currentlocationInsight,
   };
 
   return (

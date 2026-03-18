@@ -387,7 +387,7 @@ export const locationGallery = [
   },
 ];
 
-export const locationLocalTips = [
+export const locationInsights = [
   {
     id: 1,
     path: "/kyoto/",

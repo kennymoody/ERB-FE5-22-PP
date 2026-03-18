@@ -15,7 +15,7 @@
 
 ~7. Currency Converter not work , need fix - DONE~
 
-Idea - get the convert ratio from frankfurter api , then you can do the calculation. by using the original converter layout
+~Idea - get the convert ratio from frankfurter api , then you can do the calculation. by using the original converter layout~
 
 ~8. theme text color check - DONE~
 
@@ -43,25 +43,27 @@ Idea - get the convert ratio from frankfurter api , then you can do the calculat
 
 ~20. change to correct picsum photo - DONE~
 
-21. mediaquery > mobile > animal photo issue
+~21. mediaquery > mobile > animal photo issue~
 
 ~22. mediaquery > mobile > gap between map and guide become smaller - DONE~
 
-23. mediaquery > mobile > footer flex display issue
+~23. mediaquery > mobile > footer flex display issue~
 
-24. mediaquery > pad > footer flex display issue
+~24. mediaquery > pad > footer flex display issue~
 
-25. mediaquery > mobile > subhero info font smaller
+~25. mediaquery > mobile > subhero info font smaller~
 
-26. mediaquery > mobile > Rome page guide grid not showing well
+~26. mediaquery > mobile > Rome page guide grid not showing well~
 
-27. mediaquery > pad > Rome page guide grid not showing well
+~27. mediaquery > pad > Rome page guide grid not showing well~
 
-28. Cairo page > local insight text color issue
+~28. Cairo page > local insight text color issue~
 
 29. mediaquery > mobile > Tips page need change to flex column
 
-30. check useless CSS and remove
+30. check old CSS and remove
+
+31. make all location widget to get the data from center
 
 
 ## Useful Things:

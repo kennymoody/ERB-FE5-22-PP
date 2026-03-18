@@ -5,10 +5,10 @@ const Footer = () => {
     <section className="section footercontent">
       <div className="footercontent-overlay">
         <div className="footercontent-container footercontent-flex">
-          <div className="foortercontent-left">
+          <div className="footercontent-left">
             <h2>WonderLand</h2>
           </div>
-          <div className="footercon tent-center footercontent-center-flex">
+          <div className="footercontent-center footercontent-center-flex">
             <div>
               <p>Capturing the Spirit</p>
             </div>
@@ -16,7 +16,7 @@ const Footer = () => {
               <p>of the World</p>
             </div>
           </div>
-          <div className="footercontent-menulists footercontent-menulists-flex footercontent-right nav-links">
+          <div className="footercontent-menulists-flex footercontent-right nav-links">
             <MenuList />
           </div>
         </div>

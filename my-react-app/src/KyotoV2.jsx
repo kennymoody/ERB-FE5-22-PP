@@ -33,14 +33,20 @@ function Kyoto() {
   const currentGallery = data.locationGallery.filter(
     (img) => img.path === currentPath,
   );
+  
+  const currentlocationInsight = data.locationInsights.filter(
+    (loc) => loc.path === currentPath,
+  );
 
-  // Get specific data from Data Data
+  // Get specific data from Data Array
   const contextValue = {
     allData: data,
     location: currentLocation,
     gallery: currentGallery,
     subHero: currentHero,
     locationCard: currentLocationCard,
+    locationInsight: currentlocationInsight,
+
   };
 
   return (

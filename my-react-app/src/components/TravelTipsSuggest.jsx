@@ -3,20 +3,14 @@ import { DataContext } from "../../src/ContentData";
 
 const TravelTipsSuggest = () => {
   const { checklist } = useContext(DataContext);
-
-  // 1. 建立一個 state 來管理哪些 ID 被勾選了
   const [checkedIds, setCheckedIds] = useState([]);
-
-  // 2. 處理勾選切換的邏輯
   const handleCheck = (id) => {
     if (checkedIds.includes(id)) {
-      setCheckedIds(checkedIds.filter((itemId) => itemId !== id)); // 取消勾選
+      setCheckedIds(checkedIds.filter((itemId) => itemId !== id)); // Remove Checked id
     } else {
-      setCheckedIds([...checkedIds, id]); // 加入勾選
+      setCheckedIds([...checkedIds, id]); // add Checked id
     }
   };
-
-  // 3. 【最省力 Reset】直接清空陣列，所有 checkbox 會自動取消
   const resetChecklist = () => {
     setCheckedIds([]);
   };
@@ -31,7 +25,6 @@ const TravelTipsSuggest = () => {
           <label className="checklist-item" key={item.id}>
             <input
               type="checkbox"
-              // 讓 React 決定是否勾選
               checked={checkedIds.includes(item.id)}
               onChange={() => handleCheck(item.id)}
             />
