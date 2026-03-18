@@ -107,7 +107,7 @@ nav.nav-scrolled .logo {
   position: absolute;
   bottom: -5px;
   left: 0;
-  width: 0;
+  width: 0px;
   height: 1px;
   background: var(--color-white);
   transition: width 0.3s;
@@ -136,7 +136,7 @@ nav.nav-scrolled .nav-links a.active {
   color: var(--color-primary);
 }
 
-/* Hamburger Nav Bar Mobile Menu Button */
+/* Nav Bar Mobile Menu Button Hamburger  */
 
 .mobile-menu-toggle {
   display: none;
@@ -216,41 +216,6 @@ nav.nav-scrolled .mobile-menu-toggle {
   opacity: 1;
 }
 
-/* Video Section */
-.video-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  pointer-events: none;
-  overflow: hidden;
-}
-
-.video-background iframe {
-  width: 100vw;
-  height: 56.25vw; /* 16:9 aspect ratio */
-  min-height: 100vh;
-  min-width: 177.77vh; /* 16:9 aspect ratio */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.video-overlay {
-  position: absolute;
-  inset: 0;
-  /* background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)); */
-  background: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(0, 0, 0, 1) 100%
-  );
-  z-index: 0;
-}
-
 /* Page Layout */
 .page {
   animation: fadeIn 0.6s cubic-bezier(0.16, 1, 0.3, 1);
@@ -293,7 +258,7 @@ nav.nav-scrolled .mobile-menu-toggle {
   font-size: clamp(3.5rem, 10vw, 6.5rem);
   margin-bottom: 1.5rem;
   line-height: 0.95;
-  font-weight: 400;
+  /* font-weight: 400; */
   font-family: var(--font-secondary);
   letter-spacing: -2px;
 }
@@ -301,7 +266,7 @@ nav.nav-scrolled .mobile-menu-toggle {
 .hero p {
   font-size: 1.1rem;
   max-width: 600px;
-  font-weight: 400;
+  /* font-weight: 400; */
   margin: 0 auto 3rem;
   opacity: 0.9;
   letter-spacing: 0.5px;
@@ -341,7 +306,43 @@ nav.nav-scrolled .mobile-menu-toggle {
   color: var(--color-text);
 }
 
-/* Section - Locations Grid */
+/* Section - Hero Background Video */
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.video-background iframe {
+  width: 100vw;
+  height: 56.25vw; /* 16:9 aspect ratio */
+  min-height: 100vh;
+  min-width: 177.77vh; /* 16:9 aspect ratio */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.video-overlay {
+  position: absolute;
+  inset: 0;
+  /* background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)); */
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  z-index: 0;
+}
+
+/* Main Page - Locations Card Grid */
+
 #locations {
   background: #0a0a0a;
   color: var(--color-white);
@@ -431,7 +432,7 @@ nav.nav-scrolled .mobile-menu-toggle {
 
 .location-card h3 {
   font-size: 2.2rem;
-  margin-bottom: 12px;
+  margin-bottom: 5px;
   font-family: var(--font-secondary);
   line-height: 1.1;
   text-transform: capitalize;
@@ -449,7 +450,8 @@ nav.nav-scrolled .mobile-menu-toggle {
   text-transform: uppercase;
 }
 
-/*Location Detail Page Layout */
+/* Location Page - Hero */
+
 .detail-hero {
   height: 60vh;
   background-size: cover;
@@ -463,6 +465,8 @@ nav.nav-scrolled .mobile-menu-toggle {
   text-align: center;
   position: relative;
 }
+
+/* Location Page - Hero - Hero Overlay for darken the background */
 
 .detail-hero::after {
   content: "";
@@ -515,6 +519,8 @@ nav.nav-scrolled .mobile-menu-toggle {
   margin-bottom: 1rem;
 }
 
+/* Location Page - Sidebar */
+
 .sidebar {
   background: #f0fdf4;
   padding: 40px;
@@ -550,6 +556,8 @@ nav.nav-scrolled .mobile-menu-toggle {
   color: var(--color-text);
   font-weight: 500;
 }
+
+/* Location Page - Attractions */
 
 .attractions {
   display: grid;
@@ -587,31 +595,7 @@ nav.nav-scrolled .mobile-menu-toggle {
   line-height: var(--line-height);
 }
 
-/* Section - Tips */
-.tips-grid {
-  max-width: 900px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
-  padding: 2rem 20px;
-}
-
-.tip-card {
-  background: var(--color-white);
-  padding: 40px;
-  border-radius: 32px;
-  border: 1px solid rgba(0, 0, 0, 0.05);
-  box-shadow: var(--shadow-light);
-}
-
-.tip-card h3 {
-  font-size: 1.5rem;
-  margin-bottom: 15px;
-  color: var(--color-primary);
-}
-
-/* Section - Video */
+/* Location Page - Video */
 .video-container {
   position: relative;
   width: 100%;
@@ -632,7 +616,7 @@ nav.nav-scrolled .mobile-menu-toggle {
   border: none;
 }
 
-/* Section - Map */
+/* Location Page - Map */
 .map-container {
   width: 100%;
   height: 400px;
@@ -642,7 +626,7 @@ nav.nav-scrolled .mobile-menu-toggle {
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-/* Section - Animal */
+/* Location Page - Animal */
 .animal-section {
   background: #fdf2f2;
   padding: 40px;
@@ -667,8 +651,8 @@ nav.nav-scrolled .mobile-menu-toggle {
   margin-bottom: 0.5rem;
 }
 
-/* Section - Enriched Info Grid */
-.enriched-info-grid {
+/* Location Page - Info Card Grid */
+.info-card-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 15px;
@@ -710,7 +694,7 @@ nav.nav-scrolled .mobile-menu-toggle {
   width: 50px;
 }
 
-/* Section - Weather Widget */
+/* Location Page - Weather Widget */
 .weather-widget {
   background: var(--color-white);
   padding: 20px;
@@ -779,7 +763,7 @@ nav.nav-scrolled .mobile-menu-toggle {
   font-weight: 700;
 }
 
-/* Section - Currency Converter Widget */
+/* Location Page - Currency Converter Widget */
 .currency-widget {
   background: var(--color-white);
   padding: 20px;
@@ -837,7 +821,8 @@ nav.nav-scrolled .mobile-menu-toggle {
   text-align: center;
 }
 
-/* Section - Local Tips */
+/* Location Page - Local Tips */
+
 .local-tips {
   background: #fdfcf8;
   border-radius: 24px;
@@ -850,17 +835,6 @@ nav.nav-scrolled .mobile-menu-toggle {
   margin-top: 0;
   font-family: var(--font-secondary);
   color: var(--color-primary);
-}
-
-.traveltips-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
-  margin-top: 20px;
-  max-width: 900px;
-  margin: 0 auto;
-  display: grid;
-  padding: 2rem 20px;
 }
 
 .tip-item h4 {
@@ -879,7 +853,7 @@ nav.nav-scrolled .mobile-menu-toggle {
   margin: 0;
 }
 
-/* Section - Image Gallery  */
+/* Location Page - Image Gallery  */
 .image-gallery {
   margin: 3rem 0;
 }
@@ -915,7 +889,7 @@ nav.nav-scrolled .mobile-menu-toggle {
   filter: brightness(0.8);
 }
 
-/* Section - Interactive Checklist */
+/* Travel Tips Page - Interactive Checklist */
 
 .checklist-container {
   background: var(--color-white);
@@ -958,6 +932,43 @@ nav.nav-scrolled .mobile-menu-toggle {
   opacity: 0.5;
 }
 
+/* Travel Tips Page - Tips Card */
+.tips-grid {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding: 2rem 20px;
+}
+
+.tip-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: var(--color-primary);
+}
+
+/* Travel Tips Page - Travel Tips Card */
+
+.traveltipscard-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  padding: 2rem 20px;
+}
+
+.tip-card {
+  background: var(--color-white);
+  padding: 40px;
+  border-radius: 32px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: var(--shadow-light);
+}
+
 /* Footer Content */
 .footercontent {
   max-width: 100%;
@@ -967,6 +978,13 @@ nav.nav-scrolled .mobile-menu-toggle {
   background-image: url("https://picsum.photos/seed/black/1920/1080");
   /* position:fixed; */
   color: var(--color-white);
+  p {
+    font-family: var(--font-secondary);
+    font-size: 1.2rem;
+    /* font-weight: 400; */
+    letter-spacing: 0.5px;
+    line-height: var(--line-height);
+  }
 }
 
 .footercontent-container {
@@ -1001,16 +1019,6 @@ nav.nav-scrolled .mobile-menu-toggle {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-}
-
-.footercontent {
-  p {
-    font-family: var(--font-secondary);
-    font-size: 1.2rem;
-    /* font-weight: 400; */
-    letter-spacing: 0.5px;
-    line-height: var(--line-height);
-  }
 }
 
 .footercontent .footercontent-right {
@@ -1050,9 +1058,10 @@ nav.nav-scrolled .mobile-menu-toggle {
 /* --- Themes --- */
 
 /* Theme - Location - Kyoto */
+
 .theme-kyoto {
-  --color-primary: #bc4749; /* Vermilion */
-  --bg: #fdfcf0; /* Washi Cream */
+  --color-primary: #bc4749;
+  --bg: #fdfcf0;
   --sidebar-bg: #f1eee4;
   background-color: var(--bg);
 }
@@ -1077,6 +1086,7 @@ nav.nav-scrolled .mobile-menu-toggle {
 }
 
 /* Theme - Location - Rome */
+
 .theme-rome {
   --color-primary: #6a040f;
   --bg: #f8f9fa;
@@ -1111,14 +1121,15 @@ nav.nav-scrolled .mobile-menu-toggle {
   gap: 20px;
   width: 100%;
   position: static;
-  background: #fff;
+  background: var(--color-white);
   border: 1px solid #ddd;
   border-radius: 0;
 }
 
 /* Theme - Location - Cusco */
+
 .theme-cusco {
-  --color-primary: #d4a373; /* Earthy Gold */
+  --color-primary: #d4a373;
   --bg: #fefae0;
   background-color: var(--bg);
 }
@@ -1126,7 +1137,7 @@ nav.nav-scrolled .mobile-menu-toggle {
   background-image: url("https://plus.unsplash.com/premium_photo-1733342523406-43ad5578305e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
 }
 .theme-cusco .main-content section {
-  background: #fff;
+  background: var(--color-white);
   padding: 40px;
   border-radius: 0;
   box-shadow: 10px 10px 0px var(--color-primary);
@@ -1139,19 +1150,20 @@ nav.nav-scrolled .mobile-menu-toggle {
 .theme-cusco .sidebar h3,
 .theme-cusco .info-item label,
 .theme-cusco .info-item span {
-  color: #fff;
+  color: var(--color-white);
 }
 
 /* Theme - Location - Cairo */
+
 .theme-cairo {
-  --color-primary: #b08968; /* Sand Gold */
+  --color-primary: #b08968;
   --bg: #1a1a1a;
   --color-text-light: #aaa;
+  --color-border: #444;
   background-color: var(--bg);
   color: var(--color-text);
 }
 .theme-cairo .detail-hero {
-  /* background-attachment: fixed; */
   background-size: cover;
   background-position: center;
   background-image: url("https://cdn.pixabay.com/photo/2017/03/10/23/00/egypt-2133951_1280.jpg");
@@ -1166,17 +1178,17 @@ nav.nav-scrolled .mobile-menu-toggle {
 }
 .theme-cairo .attr-card {
   background: #262626;
-  border-color: #444;
+  border-color: var(--color-border);
 }
 .theme-cairo .attr-card h4,
 .theme-cairo .attr-card p {
-  color: #fff;
+  color: var(--color-white);
 }
 .theme-cairo .weather-widget,
 .theme-cairo .currency-widget {
   background: #262626;
-  border-color: #444;
-  color: #fff;
+  border-color: var(--color-border);
+  color: var(--color-white);
 }
 .theme-cairo .current-temp {
   color: var(--color-primary);
@@ -1188,7 +1200,7 @@ nav.nav-scrolled .mobile-menu-toggle {
   color: var(--color-primary);
 }
 .theme-cairo .info-item span {
-  color: #fff;
+  color: var(--color-white);
 }
 .theme-cairo .local-tips {
   background: #262626;
@@ -1213,8 +1225,6 @@ nav.nav-scrolled .mobile-menu-toggle {
   margin-top: 0;
   padding-top: 4rem;
 }
-
-/* Theme - Travel Tips */
 
 .theme-tips .tip-card {
   background: #1a1a1a;
@@ -1318,14 +1328,13 @@ nav.nav-scrolled .mobile-menu-toggle {
   .sidebar {
     position: static;
   }
-.footercontent .footercontent-center-flex {
+  .footercontent .footercontent-center-flex {
     display: none;
   }
   .theme-rome .sidebar {
-  grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
 }
-}
-
 
 @media (max-width: 768px) {
   .nav-container {
@@ -1370,22 +1379,23 @@ nav.nav-scrolled .mobile-menu-toggle {
     min-height: 15vh;
   }
   .footercontent-flex {
-  display: flex;
-  justify-content: center;
-  flex-flow:column;
-  align-items: center;
-  /* gap: 2rem; */
-  padding: 1rem 0px;
-  /* margin: 2rem 2rem; */
-}
-.footercontent-menulists-flex {
-  display: flex;
-  flex-flow: row;
-  justify-content: space-between;
-  align-items: center;
-  margin: 2rem 2rem;
-}
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    padding: 1rem 0px;
+  }
+  .footercontent-menulists-flex {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 2rem;
+  }
   .theme-rome .sidebar {
-  grid-template-columns: 1fr;
-}
+    grid-template-columns: 1fr;
+  }
+  .traveltipscard-grid {
+    grid-template-columns: 1fr;
+  }
 }

@@ -2,7 +2,7 @@ import React from "react";
 
 const SideBarInfoCard = ({ voltage, plug, plugimgsrc, avgtemp, currency }) => {
   return (
-    <div className="enriched-info-grid">
+    <div className="info-card-grid">
       <div className="info-card">
         <label>Voltage</label>
         <span>{voltage}</span>

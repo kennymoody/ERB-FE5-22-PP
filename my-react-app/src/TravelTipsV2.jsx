@@ -31,9 +31,8 @@ function TravelTips() {
       <DataContext.Provider value={contextValue}>
         <div className="page theme-tips">
           <Hero />
-                    <TravelTipsSuggest />
+          <TravelTipsSuggest />
           <TravelTipsCard />
-
         </div>
         <FooterContent />
         <Footer />

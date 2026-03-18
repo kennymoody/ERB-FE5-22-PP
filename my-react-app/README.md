@@ -59,11 +59,11 @@
 
 ~28. Cairo page > local insight text color issue~
 
-29. mediaquery > mobile > Tips page need change to flex column
+~29. mediaquery > mobile > Tips page need change to flex column~
 
 30. check old CSS and remove
 
-31. make all location widget to get the data from center
+~31. make all location widget to get the data from center~
 
 
 ## Useful Things:
