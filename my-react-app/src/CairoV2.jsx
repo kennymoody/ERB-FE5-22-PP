@@ -1,4 +1,4 @@
-import React, { createContext, useState } from "react";
+import React, { useState } from "react";
 import { DataContext } from "./ContentData";
 import NavBar from "./components/NavBarV2";
 import Hero from "./components/SubHero";
@@ -10,7 +10,7 @@ import LocationGallery from "./components/LocationGalleryV2";
 import LocationLocalTips from "./components/LocationLocalTips";
 import LocationMap from "./components/LocationMap";
 import LocationSideBar from "./components/LocationSideBar";
-import Country from "./components/CountryV2";
+import FooterContent from "./components/FooterContent";
 import Footer from "./components/Footer";
 import * as allData from "../dataV2";
 
@@ -26,12 +26,16 @@ function Cairo() {
   );
   const currentHero = data.heroData.find((loc) => loc.path === currentPath);
   // console.log(currentHero);
+  const currentLocationCard = data.locationAttractionCards.filter(
+    (loc) => loc.path === currentPath,
+  );
 
   const contextValue = {
-    allData: data, // 所有數據
-    location: currentLocation, // 當前地點的詳細資料 (intro, video, animal...)
-    gallery: currentGallery, // 當前地點的相簿
+    allData: data,
+    location: currentLocation,
+    gallery: currentGallery,
     subHero: currentHero,
+    locationCard: currentLocationCard,
   };
   return (
     <React.Fragment>
@@ -50,13 +54,10 @@ function Cairo() {
               <LocationMap />
             </div>
             <LocationSideBar />
-            {/* <Country /> */}
-            {/* <About /> */}
-            {/* <Services /> */}
-            {/* <Tours /> */}
           </div>
         </div>
-        {/* <Footer /> */}
+        <FooterContent />
+        <Footer />
       </DataContext.Provider>
     </React.Fragment>
   );

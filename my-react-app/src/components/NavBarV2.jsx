@@ -12,11 +12,10 @@ const NavBar = () => {
     } else {
       document.body.style.overflow = "";
     }
-    // 清理函數：確保組件卸載時恢復正常捲動
     return () => {
       document.body.style.overflow = "";
     };
-  }, [isToggled]); // 只有當 isToggled 變化時才執行
+  }, [isToggled]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -37,7 +36,7 @@ const NavBar = () => {
           <div className="nav-links">
             <MenuList />
           </div>
-          {/* // <!-- Mobile Menu --> */}
+          {/* Mobile Menu */}
           <div className="mobile-menu-toggle" onClick={handleToggle}>
             <i className="fa-solid fa-bars"></i>
           </div>

@@ -7,14 +7,13 @@ const Footer = () => {
         <div className="footercontent-container footercontent-flex">
           <div className="foortercontent-left">
             <h2>WonderLand</h2>
-            <p>Capturing the Spirit of the World</p>
           </div>
           <div className="footercon tent-center footercontent-center-flex">
             <div>
-              <p>About Me</p>
+              <p>Capturing the Spirit</p>
             </div>
             <div>
-              <p>Follow Me</p>
+              <p>of the World</p>
             </div>
           </div>
           <div className="footercontent-menulists footercontent-menulists-flex footercontent-right nav-links">

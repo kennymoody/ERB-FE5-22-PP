@@ -1,4 +1,4 @@
-import React, { createContext, useState } from "react";
+import React, { useState } from "react";
 import { DataContext } from "./ContentData";
 import NavBar from "./components/NavBarV2";
 import Hero from "./components/SubHero";
@@ -10,31 +10,37 @@ import LocationGallery from "./components/LocationGalleryV2";
 import LocationLocalTips from "./components/LocationLocalTips";
 import LocationMap from "./components/LocationMap";
 import LocationSideBar from "./components/LocationSideBar";
-import Country from "./components/CountryV2";
 import FooterContent from "./components/FooterContent";
 import Footer from "./components/Footer";
 import * as allData from "../dataV2";
 
 function Kyoto() {
+  // Keep data by using useState
   const [data] = useState(allData);
+  // Get current real path for data filtering
   const currentPath = window.location.pathname;
 
+  // Filter data out from allData
   const currentLocation = data.locations.find(
     (loc) => loc.path === currentPath,
   );
+  const currentLocationCard = data.locationAttractionCards.filter(
+    (loc) => loc.path === currentPath,
+  );
+
+  const currentHero = data.heroData.find((loc) => loc.path === currentPath);
+
   const currentGallery = data.locationGallery.filter(
     (img) => img.path === currentPath,
   );
 
-  const currentHero = data.heroData.find(
-    (loc) => loc.path === currentPath
-  );
-
+  // Get specific data from Data Data
   const contextValue = {
-    allData: data, // 所有數據
-    location: currentLocation, // 當前地點的詳細資料 (intro, video, animal...)
-    gallery: currentGallery, // 當前地點的相簿
+    allData: data,
+    location: currentLocation,
+    gallery: currentGallery,
     subHero: currentHero,
+    locationCard: currentLocationCard,
   };
 
   return (
