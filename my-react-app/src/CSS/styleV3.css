@@ -34,7 +34,6 @@ body {
   color: var(--color-text);
   line-height: var(--line-height);
   overflow-x: hidden;
-  width: 100%;
 }
 
 h1,
@@ -47,31 +46,29 @@ h3,
 /* Navbar */
 
 nav {
-  width:100%;
   position: fixed;
   top: 0;
   width: 100%;
   background: transparent;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   z-index: 1000;
-  padding: 1.5rem 1.5rem;
+  padding: 1.5rem 0;
   transition: var(--default-transition);
 }
 
 nav.nav-scrolled {
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
-  /* padding: 1.5rem 0; */
+  padding: 1.5rem 0;
 }
 
 .nav-container {
-  width: 100%;
   max-width: 1400px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding: 0 40px; */
+  padding: 0 40px;
 }
 
 .logo {
@@ -110,7 +107,7 @@ nav.nav-scrolled .logo {
   position: absolute;
   bottom: -5px;
   left: 0;
-  width: 0px;
+  width: 0;
   height: 1px;
   background: var(--color-white);
   transition: width 0.3s;
@@ -139,7 +136,7 @@ nav.nav-scrolled .nav-links a.active {
   color: var(--color-primary);
 }
 
-/* Nav Bar Mobile Menu Button Hamburger  */
+/* Hamburger Nav Bar Mobile Menu Button */
 
 .mobile-menu-toggle {
   display: none;
@@ -219,6 +216,41 @@ nav.nav-scrolled .mobile-menu-toggle {
   opacity: 1;
 }
 
+/* Video Section */
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.video-background iframe {
+  width: 100vw;
+  height: 56.25vw; /* 16:9 aspect ratio */
+  min-height: 100vh;
+  min-width: 177.77vh; /* 16:9 aspect ratio */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.video-overlay {
+  position: absolute;
+  inset: 0;
+  /* background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)); */
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  z-index: 0;
+}
+
 /* Page Layout */
 .page {
   animation: fadeIn 0.6s cubic-bezier(0.16, 1, 0.3, 1);
@@ -261,7 +293,7 @@ nav.nav-scrolled .mobile-menu-toggle {
   font-size: clamp(3.5rem, 10vw, 6.5rem);
   margin-bottom: 1.5rem;
   line-height: 0.95;
-  /* font-weight: 400; */
+  font-weight: 400;
   font-family: var(--font-secondary);
   letter-spacing: -2px;
 }
@@ -269,7 +301,7 @@ nav.nav-scrolled .mobile-menu-toggle {
 .hero p {
   font-size: 1.1rem;
   max-width: 600px;
-  /* font-weight: 400; */
+  font-weight: 400;
   margin: 0 auto 3rem;
   opacity: 0.9;
   letter-spacing: 0.5px;
@@ -309,43 +341,7 @@ nav.nav-scrolled .mobile-menu-toggle {
   color: var(--color-text);
 }
 
-/* Section - Hero Background Video */
-.video-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  pointer-events: none;
-  overflow: hidden;
-}
-
-.video-background iframe {
-  width: 100vw;
-  height: 56.25vw; /* 16:9 aspect ratio */
-  min-height: 100vh;
-  min-width: 177.77vh; /* 16:9 aspect ratio */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.video-overlay {
-  position: absolute;
-  inset: 0;
-  /* background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)); */
-  background: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(0, 0, 0, 1) 100%
-  );
-  z-index: 0;
-}
-
-/* Main Page - Locations Card Grid */
-
+/* Section - Locations Grid */
 #locations {
   background: #0a0a0a;
   color: var(--color-white);
@@ -435,7 +431,7 @@ nav.nav-scrolled .mobile-menu-toggle {
 
 .location-card h3 {
   font-size: 2.2rem;
-  margin-bottom: 5px;
+  margin-bottom: 12px;
   font-family: var(--font-secondary);
   line-height: 1.1;
   text-transform: capitalize;
@@ -453,8 +449,7 @@ nav.nav-scrolled .mobile-menu-toggle {
   text-transform: uppercase;
 }
 
-/* Location Page - Hero */
-
+/*Location Detail Page Layout */
 .detail-hero {
   height: 60vh;
   background-size: cover;
@@ -468,8 +463,6 @@ nav.nav-scrolled .mobile-menu-toggle {
   text-align: center;
   position: relative;
 }
-
-/* Location Page - Hero - Hero Overlay for darken the background */
 
 .detail-hero::after {
   content: "";
@@ -519,10 +512,8 @@ nav.nav-scrolled .mobile-menu-toggle {
 .main-content p {
   font-size: 1.1rem;
   color: var(--color-text-light);
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
-
-/* Location Page - Sidebar */
 
 .sidebar {
   background: #f0fdf4;
@@ -560,8 +551,6 @@ nav.nav-scrolled .mobile-menu-toggle {
   font-weight: 500;
 }
 
-/* Location Page - Attractions */
-
 .attractions {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -598,7 +587,101 @@ nav.nav-scrolled .mobile-menu-toggle {
   line-height: var(--line-height);
 }
 
-/* Location Page - Video */
+/* Section - Tips */
+.tips-grid {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding: 2rem 20px;
+}
+
+.tip-card {
+  background: var(--color-white);
+  padding: 40px;
+  border-radius: 32px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: var(--shadow-light);
+}
+
+.tip-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: var(--color-primary);
+}
+
+/* Footer Content */
+.footercontent {
+  max-width: 100%;
+  /* min-height: 35vh; */
+  margin: 0 auto;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://cdn.pixabay.com/photo/2024/12/28/03/39/field-9295186_1280.jpg");
+  /* position:fixed; */
+  color: var(--color-white);
+  text-align:center;
+  p {
+    font-family: var(--font-secondary);
+    font-size: 1.2rem;
+    /* font-weight: 400; */
+    letter-spacing: 0.5px;
+    line-height: var(--line-height);
+  }
+}
+
+.footercontent-container {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.footercontent-overlay {
+  backdrop-filter: blur(10px);
+}
+
+.footercontent-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem 0px;
+  /* margin: 2rem 2rem; */
+}
+
+.footercontent .footercontent-left {
+  border-right: 1px solid #fffffffc;
+  padding: 0 2rem;
+  /* height: 100%; */
+  /* width: 20%; */
+  margin: 2rem 2rem;
+}
+
+.footercontent .footercontent-center-flex {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footercontent .footercontent-right {
+  border-left: 1px solid #fffffffc;
+  padding: 0 2rem;
+  /* height: 100%; */
+}
+
+.footercontent-menulists-flex {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 2rem;
+  text-align: center;
+}
+
+/* Section - Video */
 .video-container {
   position: relative;
   width: 100%;
@@ -619,7 +702,7 @@ nav.nav-scrolled .mobile-menu-toggle {
   border: none;
 }
 
-/* Location Page - Map */
+/* Section - Map */
 .map-container {
   width: 100%;
   height: 400px;
@@ -629,7 +712,7 @@ nav.nav-scrolled .mobile-menu-toggle {
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-/* Location Page - Animal */
+/* Section - Animal */
 .animal-section {
   background: #fdf2f2;
   padding: 40px;
@@ -639,6 +722,18 @@ nav.nav-scrolled .mobile-menu-toggle {
   grid-template-columns: 1fr 1.5fr;
   gap: 40px;
   align-items: center;
+}
+
+@media (max-width: 768px) {
+  .animal-section {
+    grid-template-columns: 1fr;
+    padding: 30px;
+    gap: 20px;
+  }
+
+  .animal-image {
+    height: 250px;
+  }
 }
 
 .animal-image {
@@ -651,14 +746,14 @@ nav.nav-scrolled .mobile-menu-toggle {
 
 .animal-info h3 {
   color: #991b1b;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
-/* Location Page - Info Card Grid */
+/* Section - Enriched Info Grid */
 .info-card-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 15px;
+  gap: 10px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -672,6 +767,7 @@ nav.nav-scrolled .mobile-menu-toggle {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  /* margin: 5px; */
 }
 
 .info-card i {
@@ -697,7 +793,7 @@ nav.nav-scrolled .mobile-menu-toggle {
   width: 50px;
 }
 
-/* Location Page - Weather Widget */
+/* Section - Weather Widget */
 .weather-widget {
   background: var(--color-white);
   padding: 20px;
@@ -766,7 +862,7 @@ nav.nav-scrolled .mobile-menu-toggle {
   font-weight: 700;
 }
 
-/* Location Page - Currency Converter Widget */
+/* Section - Currency Converter Widget */
 .currency-widget {
   background: var(--color-white);
   padding: 20px;
@@ -824,8 +920,7 @@ nav.nav-scrolled .mobile-menu-toggle {
   text-align: center;
 }
 
-/* Location Page - Local Tips */
-
+/* Section - Local Tips */
 .local-tips {
   background: #fdfcf8;
   border-radius: 24px;
@@ -838,6 +933,17 @@ nav.nav-scrolled .mobile-menu-toggle {
   margin-top: 0;
   font-family: var(--font-secondary);
   color: var(--color-primary);
+}
+
+.traveltips-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  padding: 2rem 20px;
 }
 
 .tip-item h4 {
@@ -856,7 +962,7 @@ nav.nav-scrolled .mobile-menu-toggle {
   margin: 0;
 }
 
-/* Location Page - Image Gallery  */
+/* Section - Image Gallery  */
 .image-gallery {
   margin: 3rem 0;
 }
@@ -892,7 +998,7 @@ nav.nav-scrolled .mobile-menu-toggle {
   filter: brightness(0.8);
 }
 
-/* Travel Tips Page - Interactive Checklist */
+/* Section - Interactive Checklist */
 
 .checklist-container {
   background: var(--color-white);
@@ -935,109 +1041,6 @@ nav.nav-scrolled .mobile-menu-toggle {
   opacity: 0.5;
 }
 
-/* Travel Tips Page - Tips Card */
-.tips-grid {
-  max-width: 900px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
-  padding: 2rem 20px;
-}
-
-.tip-card h3 {
-  font-size: 1.5rem;
-  margin-bottom: 15px;
-  color: var(--color-primary);
-}
-
-/* Travel Tips Page - Travel Tips Card */
-
-.traveltipscard-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
-  margin-top: 20px;
-  max-width: 900px;
-  margin: 0 auto;
-  display: grid;
-  padding: 2rem 20px;
-}
-
-.tip-card {
-  background: var(--color-white);
-  padding: 40px;
-  border-radius: 32px;
-  border: 1px solid rgba(0, 0, 0, 0.05);
-  box-shadow: var(--shadow-light);
-}
-
-/* Footer Content */
-.footercontent {
-  max-width: 100%;
-  min-height: 35vh;
-  margin: 0 auto;
-  background-attachment: fixed;
-  background-image: url("https://picsum.photos/seed/black/1920/1080");
-  /* position:fixed; */
-  color: var(--color-white);
-  p {
-    font-family: var(--font-secondary);
-    font-size: 1.2rem;
-    /* font-weight: 400; */
-    letter-spacing: 0.5px;
-    line-height: var(--line-height);
-  }
-}
-
-.footercontent-container {
-  max-width: 70%;
-  margin: 0 auto;
-}
-
-.footercontent-overlay {
-  backdrop-filter: blur(5px);
-}
-
-.footercontent-flex {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  /* gap: 2rem; */
-  padding: 1rem 0px;
-  /* margin: 2rem 2rem; */
-}
-
-.footercontent .footercontent-left {
-  border-right: 1px solid #fffffffc;
-  padding: 0 2rem;
-  /* height: 100%; */
-  /* width: 20%; */
-  margin: 2rem 2rem;
-}
-
-.footercontent .footercontent-center-flex {
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-}
-
-.footercontent .footercontent-right {
-  border-left: 1px solid #fffffffc;
-  padding: 0 2rem;
-  /* height: 100%; */
-}
-
-.footercontent-menulists-flex {
-  display: flex;
-  flex-flow: column;
-  justify-content: space-between;
-  align-items: center;
-  margin: 2rem 2rem;
-}
-
 /* Footer */
 .footer {
   background: #000000;
@@ -1061,10 +1064,9 @@ nav.nav-scrolled .mobile-menu-toggle {
 /* --- Themes --- */
 
 /* Theme - Location - Kyoto */
-
 .theme-kyoto {
-  --color-primary: #bc4749;
-  --bg: #fdfcf0;
+  --color-primary: #bc4749; /* Vermilion */
+  --bg: #fdfcf0; /* Washi Cream */
   --sidebar-bg: #f1eee4;
   background-color: var(--bg);
 }
@@ -1083,13 +1085,8 @@ nav.nav-scrolled .mobile-menu-toggle {
   border-radius: 0;
   border-top: 8px solid var(--color-primary);
 }
-.theme-kyoto .nav-container .logo {
-  font-family: var(--font-secondary);
-  font-style: italic;
-}
 
 /* Theme - Location - Rome */
-
 .theme-rome {
   --color-primary: #6a040f;
   --bg: #f8f9fa;
@@ -1129,10 +1126,13 @@ nav.nav-scrolled .mobile-menu-toggle {
   border-radius: 0;
 }
 
-/* Theme - Location - Cusco */
+.theme-rome .info-card-grid {
+  grid-column: span 2;
+}
 
+/* Theme - Location - Cusco */
 .theme-cusco {
-  --color-primary: #d4a373;
+  --color-primary: #d4a373; /* Earthy Gold */
   --bg: #fefae0;
   background-color: var(--bg);
 }
@@ -1140,7 +1140,7 @@ nav.nav-scrolled .mobile-menu-toggle {
   background-image: url("https://plus.unsplash.com/premium_photo-1733342523406-43ad5578305e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
 }
 .theme-cusco .main-content section {
-  background: var(--color-white);
+  background: #fff;
   padding: 40px;
   border-radius: 0;
   box-shadow: 10px 10px 0px var(--color-primary);
@@ -1153,20 +1153,19 @@ nav.nav-scrolled .mobile-menu-toggle {
 .theme-cusco .sidebar h3,
 .theme-cusco .info-item label,
 .theme-cusco .info-item span {
-  color: var(--color-white);
+  color: #fff;
 }
 
 /* Theme - Location - Cairo */
-
 .theme-cairo {
-  --color-primary: #b08968;
+  --color-primary: #b08968; /* Sand Gold */
   --bg: #1a1a1a;
   --color-text-light: #aaa;
-  --color-border: #444;
   background-color: var(--bg);
   color: var(--color-text);
 }
 .theme-cairo .detail-hero {
+  /* background-attachment: fixed; */
   background-size: cover;
   background-position: center;
   background-image: url("https://cdn.pixabay.com/photo/2017/03/10/23/00/egypt-2133951_1280.jpg");
@@ -1181,17 +1180,17 @@ nav.nav-scrolled .mobile-menu-toggle {
 }
 .theme-cairo .attr-card {
   background: #262626;
-  border-color: var(--color-border);
+  border-color: #444;
 }
 .theme-cairo .attr-card h4,
 .theme-cairo .attr-card p {
-  color: var(--color-white);
+  color: #fff;
 }
 .theme-cairo .weather-widget,
 .theme-cairo .currency-widget {
   background: #262626;
-  border-color: var(--color-border);
-  color: var(--color-white);
+  border-color: #444;
+  color: #fff;
 }
 .theme-cairo .current-temp {
   color: var(--color-primary);
@@ -1203,19 +1202,14 @@ nav.nav-scrolled .mobile-menu-toggle {
   color: var(--color-primary);
 }
 .theme-cairo .info-item span {
-  color: var(--color-white);
+  color: #fff;
 }
 .theme-cairo .local-tips {
   background: #262626;
   border-color: var(--color-primary);
 }
-.theme-cairo .tip-item {
-  h4 {
-    color: var(--color-white);
-  }
-  p {
-    color: var(--color-text-light);
-  }
+.theme-cairo .tip-item p {
+  color: var(--color-text-light);
 }
 
 /* Theme - Travel Tips */
@@ -1228,6 +1222,8 @@ nav.nav-scrolled .mobile-menu-toggle {
   margin-top: 0;
   padding-top: 4rem;
 }
+
+/* Theme - Travel Tips */
 
 .theme-tips .tip-card {
   background: #1a1a1a;
@@ -1317,10 +1313,16 @@ nav.nav-scrolled .mobile-menu-toggle {
 
 /* Media Queries */
 
-@media only screen and (max-width: 1000px) {
+@media (max-width: 1200px) {
+  .locations-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 1000px) {
   .container {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 0;
   }
   .sidebar {
     position: static;
@@ -1331,37 +1333,43 @@ nav.nav-scrolled .mobile-menu-toggle {
   .theme-rome .sidebar {
     grid-template-columns: 1fr 1fr;
   }
-}
-
-/* Extra small devices (phones, 600px and down) */
-/* @media only screen and (max-width: 600px) {...} */
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-/* @media only screen and (min-width: 600px) {...} */
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (max-width: 992px) {
-  .locations-grid {
+  .footercontent-flex {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    padding: 1rem 0px;
+    gap: 0;
+  }
+  .footercontent-menulists-flex {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
+    /* flex-flow: row; */
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 2rem;
   }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px) {
-  /* .nav-container {
+@media (max-width: 768px) {
+  .nav-container {
     padding: 0 20px;
-  } */
+  }
   .nav-links {
     display: none;
   }
   .mobile-menu-toggle {
     display: block;
   }
+
   .locations-grid {
     grid-template-columns: 1fr;
+    padding: 0 20px 4rem;
   }
   .card {
     height: 500px;
   }
+
   .hero h1 {
     font-size: 3.5rem;
   }
@@ -1394,8 +1402,8 @@ nav.nav-scrolled .mobile-menu-toggle {
     padding: 1rem 0px;
   }
   .footercontent-menulists-flex {
-    display: flex;
-    flex-flow: row;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     justify-content: space-between;
     align-items: center;
     margin: 2rem 2rem;
@@ -1403,16 +1411,20 @@ nav.nav-scrolled .mobile-menu-toggle {
   .theme-rome .sidebar {
     grid-template-columns: 1fr;
   }
+  .theme-rome .info-card-grid {
+  grid-column: span 1;
+}
   .traveltipscard-grid {
     grid-template-columns: 1fr;
   }
-}
 
-
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-/* @media only screen and (max-width: 1200px) {
-  .locations-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .footercontent-flex {
+    gap: 0;
   }
-} */
+  .footer {
+    text-align: center;
+  }
+  .info-card {
+    margin: 5px;
+  }
+}

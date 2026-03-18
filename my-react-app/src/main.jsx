@@ -1,6 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import "./CSS/styleV2.css";
+import "./CSS/styleV3.css";
 import App from "./App.jsx";
 import Kyoto from "./KyotoV2.jsx";
 import Cairo from "./CairoV2.jsx";

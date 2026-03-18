@@ -10,11 +10,13 @@ function App() {
 
   return (
     <React.Fragment>
-        <NavBar />
+      <NavBar />
+      <div className="page">
         <Hero />
         <Country />
-        <FooterContent />
-        <Footer />
+      </div>
+      <FooterContent />
+      <Footer />
     </React.Fragment>
   );
 }

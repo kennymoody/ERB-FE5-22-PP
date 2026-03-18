@@ -27,7 +27,6 @@ const NavBar = () => {
 
   return (
     <>
-      <title>WonderLand - ERB Homework by #22 Kenny</title>
       <nav className={scrolled ? "nav-scrolled" : ""}>
         <div className="nav-container">
           <a href="/" className="logo">
