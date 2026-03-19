@@ -6,7 +6,7 @@ const LocationIntro = () => {
   // console.log(location);
   if (!location) return null;
   return (
-    <section>
+    <section className="locationIntro">
       <h2>{location.introh1}</h2>
       <p>{location.introp}</p>
     </section>

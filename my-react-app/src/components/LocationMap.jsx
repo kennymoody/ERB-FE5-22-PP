@@ -3,7 +3,7 @@ import { DataContext } from "../../src/ContentData";
 const LocationMap = () => {
   const { location } = useContext(DataContext);
   return (
-    <section>
+    <section className="locationMap">
       <h2>Location Map</h2>
       <div className="map-container">
         <iframe

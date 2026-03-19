@@ -7,7 +7,7 @@ import LocationIntro from "./components/LocationIntroV2";
 import LocationAnimal from "./components/LocationAnimal";
 import LocationAttraction from "./components/LocationAttraction";
 import LocationGallery from "./components/LocationGalleryV2";
-import LocationLocalTips from "./components/LocationLocalTips";
+import LocationLocalInsights from "./components/LocationLocalInsights";
 import LocationMap from "./components/LocationMap";
 import LocationSideBar from "./components/LocationSideBar";
 import FooterContent from "./components/FooterContent";
@@ -33,7 +33,7 @@ function Kyoto() {
   const currentGallery = data.locationGallery.filter(
     (img) => img.path === currentPath,
   );
-  
+
   const currentlocationInsight = data.locationInsights.filter(
     (loc) => loc.path === currentPath,
   );
@@ -46,12 +46,13 @@ function Kyoto() {
     subHero: currentHero,
     locationCard: currentLocationCard,
     locationInsight: currentlocationInsight,
-
   };
 
   return (
     <React.Fragment>
+      <div className="theme-kyoto">
       <NavBar />
+</div>
       <DataContext.Provider value={contextValue}>
         <div className="page theme-kyoto">
           <Hero />
@@ -62,7 +63,7 @@ function Kyoto() {
               <LocationAnimal />
               <LocationAttraction />
               <LocationGallery />
-              <LocationLocalTips />
+              <LocationLocalInsights />
               <LocationMap />
             </div>
             <LocationSideBar />

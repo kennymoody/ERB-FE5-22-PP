@@ -7,7 +7,7 @@ const TravelTipsCard = () => {
   return (
     <div className="traveltipscard-grid">
       {tipscard.map((item) => (
-        <div className="tip-card" key={item.id}>
+        <div className="traveltipscard-card" key={item.id}>
           <h3>{item.title}</h3>
           <p>{item.details}</p>
         </div>

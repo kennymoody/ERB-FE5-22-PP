@@ -7,7 +7,7 @@ import LocationIntro from "./components/LocationIntroV2";
 import LocationAnimal from "./components/LocationAnimal";
 import LocationAttraction from "./components/LocationAttraction";
 import LocationGallery from "./components/LocationGalleryV2";
-import LocationLocalTips from "./components/LocationLocalTips";
+import LocationLocalInsights from "./components/LocationLocalInsights";
 import LocationMap from "./components/LocationMap";
 import LocationSideBar from "./components/LocationSideBar";
 import FooterContent from "./components/FooterContent";
@@ -29,10 +29,9 @@ function Rome() {
   const currentLocationCard = data.locationAttractionCards.filter(
     (loc) => loc.path === currentPath,
   );
-    const currentlocationInsight = data.locationInsights.filter(
+  const currentlocationInsight = data.locationInsights.filter(
     (loc) => loc.path === currentPath,
   );
-
 
   const contextValue = {
     allData: data,
@@ -40,12 +39,14 @@ function Rome() {
     gallery: currentGallery,
     subHero: currentHero,
     locationCard: currentLocationCard,
-        locationInsight: currentlocationInsight,
+    locationInsight: currentlocationInsight,
   };
 
   return (
     <React.Fragment>
+      <div className="theme-rome">
       <NavBar />
+</div>
       <DataContext.Provider value={contextValue}>
         <div className="page theme-rome">
           <Hero />
@@ -56,7 +57,7 @@ function Rome() {
               <LocationAnimal />
               <LocationAttraction />
               <LocationGallery />
-              <LocationLocalTips />
+              <LocationLocalInsights />
               <LocationMap />
             </div>
             <LocationSideBar />

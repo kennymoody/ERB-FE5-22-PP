@@ -7,7 +7,7 @@ import LocationIntro from "./components/LocationIntroV2";
 import LocationAnimal from "./components/LocationAnimal";
 import LocationAttraction from "./components/LocationAttraction";
 import LocationGallery from "./components/LocationGalleryV2";
-import LocationLocalTips from "./components/LocationLocalTips";
+import LocationLocalInsights from "./components/LocationLocalInsights";
 import LocationMap from "./components/LocationMap";
 import LocationSideBar from "./components/LocationSideBar";
 import FooterContent from "./components/FooterContent";
@@ -45,7 +45,9 @@ function Cusco() {
 
   return (
     <React.Fragment>
+      <div className="theme-cusco">
       <NavBar />
+</div>
       <DataContext.Provider value={contextValue}>
         <div className="page theme-cusco">
           <Hero />
@@ -55,16 +57,17 @@ function Cusco() {
               <LocationAttraction />
               <LocationGallery />
               <LocationVideo />
-              <LocationLocalTips />
+              <LocationLocalInsights />
               <LocationAnimal />
               <LocationMap />
             </div>
             <LocationSideBar />
           </div>
-        </div>
+              </div>
         <FooterContent />
         <Footer />
       </DataContext.Provider>
+
     </React.Fragment>
   );
 }

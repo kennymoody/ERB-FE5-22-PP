@@ -5,7 +5,7 @@ const LocationAttraction = () => {
   const { locationCard } = useContext(DataContext);
   if (!locationCard || locationCard.length === 0) return null;
   return (
-    <section>
+    <section className="locationAttr">
       <h2>Must-Visit Attractions</h2>
       <div className="attractions">
         {locationCard.map((locationattr) => {

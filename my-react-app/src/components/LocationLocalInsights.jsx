@@ -1,14 +1,14 @@
 import React, { useContext } from "react";
-import { DataContext } from "../../src/ContentData";
-const LocationLocalTips = () => {
+import { DataContext } from "../ContentData";
+const LocationLocalInsights = () => {
   const { locationInsight } = useContext(DataContext);
   //   console.log(filteredLocalTips);
   return (
-    <section className="local-tips">
+    <section className="local-insights">
       <h2>Local Insights</h2>
-      <div className="tips-grid">
+      <div className="local-insights-grid">
         {locationInsight.map((location) => (
-          <div className="tip-item" key={location.id}>
+          <div className="local-insights-item" key={location.id}>
             <h4>{location.title}</h4>
             <p>{location.info}</p>
           </div>
@@ -18,4 +18,4 @@ const LocationLocalTips = () => {
   );
 };
 
-export default LocationLocalTips;
+export default LocationLocalInsights;
