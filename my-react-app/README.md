@@ -31,7 +31,7 @@
 
 ~14. favicon - DONE~
 
-15. mediaquery test in mobile and pad
+~15. mediaquery test in mobile and pad~
 
 ~16. clear old files - DONE~
 
@@ -131,6 +131,10 @@ https://favicon.io/
 Free Photo
 
 https://pixabay.com/
+
+Cheat Sheet
+
+https://docs.emmet.io/cheat-sheet/
 
 
 ## --------------- for Exam ---------------

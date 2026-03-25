@@ -342,7 +342,8 @@ nav.nav-scrolled .mobile-menu-toggle {
   color: var(--color-text);
 }
 
-/* Section - Locations Grid */
+/* Main Page - Section - Locations Grid */
+
 #locations {
   background: #0a0a0a;
   color: var(--color-white);
@@ -450,7 +451,114 @@ nav.nav-scrolled .mobile-menu-toggle {
   text-transform: uppercase;
 }
 
-/*Location Detail Page Layout */
+/* Main Page - Section - Slider */
+
+.slidesContainer {
+  /* width: 100%;
+  height: 100vh; */
+  max-width: 500px;
+  overflow: hidden;
+}
+
+
+.slider {
+  white-space: nowrap;
+  transition: ease 3000ms;
+  transform: translate3d(0, 0, 0);
+  margin: 30px 0;
+}
+
+.slides {
+  padding: 2rem;
+  width: 100%;
+  height: 400px;
+  margin: 0 auto;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  /* transition: var(--default-transition); */
+  img {
+    width: clamp(150px, 40vw, 350px);
+    /* width: 350px; */
+    /* height: 350px; */
+    height: clamp(150px, 40vw, 350px);
+    object-fit: cover;
+    border-radius: 50%;
+    z-index: 2;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  h2 {
+    color: var(--color-white);
+    z-index: 2;
+    text-align: center;
+    white-space: wrap;
+  }
+  .slideinfo {
+    width: 50%;
+    height: 100%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* gap: 1rem; */
+    h1 {
+      color: var(--color-white);
+      font-size: clamp(2rem, 4vw, 3rem);
+      text-transform: capitalize;
+      /* font-family: var(--font-secondary); */
+      /* letter-spacing: var(--spacing); */
+    }
+    h2 {
+      font-size: clamp(1rem, 2vw, 1.3rem);
+      color: var(--color-white);
+    }
+  }
+  .slideOverlay {
+    z-index: 1;
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.slideContainer {
+  img {
+    transition: transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+    display: block;
+  }
+  &:hover {
+    img {
+      transform: scale(1.05);
+    }
+  }
+}
+
+/* @media (max-width: 768px) {
+  .slides img {
+    width: 250px;
+    width: clamp(150px, 50vw, 250px);
+    height: 250px;
+     height: clamp(150px, 50vw, 250px);
+  }
+} */
+
+@media (max-width: 375px) {
+  .slides img {
+    display: none;
+  }
+}
+
+/* Location Detail Page Layout */
+
 .detail-hero {
   height: 60vh;
   background-size: cover;
@@ -780,9 +888,38 @@ nav.nav-scrolled .mobile-menu-toggle {
   font-weight: 700;
 }
 
-.plug-icon {
+/* SideBar - Plug Slider */
+
+/* .plug-icon {
   width: 50px;
+} */
+
+.plugSlideContainer {
+  max-width: 70px;
+  overflow: hidden;
+  /* padding: 20px 0; */
 }
+
+.plugSlider {
+  white-space: nowrap;
+  transition: ease 2000ms;
+  transform: translate3d(0, 0, 0);
+  /* margin: 30px 0; */
+}
+
+.plug {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* aspect-ratio: 1/1; */
+  }
+}
+
 
 /* SideBar - Weather Widget */
 
@@ -955,6 +1092,7 @@ nav.nav-scrolled .mobile-menu-toggle {
 }
 
 /* Location Page - Image Gallery Section */
+
 .image-gallery {
   margin: 3rem 0;
 }
@@ -1053,12 +1191,12 @@ nav.nav-scrolled .mobile-menu-toggle {
   }
 }
 
-/* --- Themes --- */
+/* ------- Themes ------- */
 
 /* Theme - Location - Kyoto */
 .theme-kyoto {
-  --color-primary: #bc4749; /* Vermilion */
-  --bg: #fdfcf0; /* Washi Cream */
+  --color-primary: #bc4749;
+  --bg: #fdfcf0;
   --sidebar-bg: #f1eee4;
   background-color: var(--bg);
 }
@@ -1124,7 +1262,7 @@ nav.nav-scrolled .mobile-menu-toggle {
 
 /* Theme - Location - Cusco */
 .theme-cusco {
-  --color-primary: #d4a373; /* Earthy Gold */
+  --color-primary: #d4a373;
   --bg: #fefae0;
   background-color: var(--bg);
 }
@@ -1150,8 +1288,9 @@ nav.nav-scrolled .mobile-menu-toggle {
 
 /* Theme - Location - Cairo */
 .theme-cairo {
-  --color-primary: #b08968; /* Sand Gold */
+  --color-primary: #b08968;
   --bg: #1a1a1a;
+  --bg-card: #262626;
   --color-text-light: #aaa;
   background-color: var(--bg);
   color: var(--color-text);
@@ -1167,11 +1306,11 @@ nav.nav-scrolled .mobile-menu-toggle {
   text-shadow: 0 0 10px rgba(176, 137, 104, 0.3);
 }
 .theme-cairo .sidebar {
-  background: #262626;
+  background: var(--bg-card);
   border: 1px solid var(--color-primary);
 }
 .theme-cairo .attr-card {
-  background: #262626;
+  background: var(--bg-card);
   border-color: #444;
 }
 .theme-cairo .attr-card h4,
@@ -1181,7 +1320,7 @@ nav.nav-scrolled .mobile-menu-toggle {
 .theme-cairo .weather-widget,
 .theme-cairo .currency-widget,
 .theme-cairo .info-card {
-  background: #262626;
+  background: var(--bg-card);
   border-color: #444;
   color: var(--color-white);
 }
@@ -1202,7 +1341,7 @@ nav.nav-scrolled .mobile-menu-toggle {
   color: var(--color-white);
 }
 .theme-cairo .local-insights {
-  background: #262626;
+  background: var(--bg-card);
   border-color: var(--color-primary);
 }
 .theme-cairo .local-insights-item h4 {
@@ -1212,6 +1351,10 @@ nav.nav-scrolled .mobile-menu-toggle {
 .theme-cairo .local-insights-item p {
   color: var(--color-text-light);
 }
+
+.theme-cairo .plug img{
+
+ filter: invert(1);}
 
 /* Theme - Travel Tips */
 .theme-tips {

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import NavBar from "./components/NavBarV2";
 import Hero from "./components/HeroV2";
 import Country from "./components/CountryV2";
+import Slide from "./components/Slide";
 import FooterContent from "./components/FooterContent";
 import Footer from "./components/Footer";
 
@@ -14,6 +15,7 @@ function App() {
       <div className="page">
         <Hero />
         <Country />
+        <Slide />
       </div>
       <FooterContent />
       <Footer />

@@ -6,6 +6,7 @@ import Kyoto from "./KyotoV2.jsx";
 import Cairo from "./CairoV2.jsx";
 import Cusco from "./CuscoV2.jsx";
 import Rome from "./RomeV2.jsx";
+import Plug from "./components/PlugSlide.jsx";
 import TravelTips from "./TravelTipsV2.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 

@@ -1,4 +1,5 @@
 import React from "react";
+import PlugSlide from "./PlugSlide";
 
 const SideBarInfoCard = ({ voltage, plug, plugimgsrc, avgtemp, currency }) => {
   return (
@@ -9,7 +10,8 @@ const SideBarInfoCard = ({ voltage, plug, plugimgsrc, avgtemp, currency }) => {
       </div>
       <div className="info-card">
         <label>Plug Type</label>
-        <img src={plugimgsrc} className="plug-icon" />
+        {/* <img src={plugimgsrc} className="plug-icon" /> */}
+        <PlugSlide />
         <span>{plug}</span>
       </div>
       <div className="info-card">

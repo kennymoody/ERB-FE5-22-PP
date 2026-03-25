@@ -5,6 +5,7 @@ const TravelTipsSuggest = () => {
   const { checklist } = useContext(DataContext);
   const [checkedIds, setCheckedIds] = useState([]);
   const handleCheck = (id) => {
+    // if id is already in checkedIds state, remove it, else add it
     if (checkedIds.includes(id)) {
       setCheckedIds(checkedIds.filter((itemId) => itemId !== id)); // Remove Checked id
     } else {

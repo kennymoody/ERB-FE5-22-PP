@@ -28,6 +28,7 @@ function Kyoto() {
     (loc) => loc.path === currentPath,
   );
 
+  // single value , so use find but not filter
   const currentHero = data.heroData.find((loc) => loc.path === currentPath);
 
   const currentGallery = data.locationGallery.filter(

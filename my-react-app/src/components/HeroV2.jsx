@@ -5,6 +5,7 @@ const Hero = () => {
   return (
     <section className="section hero">
       <div className="video-background">
+        {/* iframe code from YouTube */}
         <iframe
           src="https://www.youtube.com/embed/9ZfN87gSjvI?autoplay=1&mute=1&controls=0&loop=1&playlist=9ZfN87gSjvI&rel=0&showinfo=0&iv_load_policy=3&enablejsapi=1&origin=https://ais-dev-xwfevo4cdvgsy5hcied6cs-55107015959.asia-northeast1.run.app"
           frameBorder="0"

@@ -7,6 +7,7 @@ const SideBarWeather = ({ weathertitle, weatherlat, weatherlon }) => {
 
   const fetchData = async () => {
     try {
+      // Fetch data from API
       let res = await fetch(
         `${base_url}&latitude=${weatherlat}&longitude=${weatherlon}`,
       );
@@ -15,6 +16,7 @@ const SideBarWeather = ({ weathertitle, weatherlat, weatherlon }) => {
       let jsondata = await res.json();
       // console.log(jsondata);
 
+      // Depending on the weather code in jsondata, Return the weather icon
       const getWeatherIcon = (code) => {
         if (code === 0) return "☀️";
         if ([1, 2, 3].includes(code)) return "⛅";
@@ -31,7 +33,7 @@ const SideBarWeather = ({ weathertitle, weatherlat, weatherlon }) => {
         return "☀️";
       };
 
-      // 2. 更新 State
+      // update weather data in useState
       setWeatherData({
         // isDay: jsondata.current_weather.is_day,
         temp: jsondata.current_weather.temperature,
@@ -47,7 +49,6 @@ const SideBarWeather = ({ weathertitle, weatherlat, weatherlon }) => {
 
   useEffect(() => {
     fetchData();
-    // 3. 加入相依陣列，當座標改變時重新抓取
   }, [weatherlat, weatherlon]);
 
   if (!weatherData) return <div>Loading...</div>;
@@ -70,6 +71,7 @@ const SideBarWeather = ({ weathertitle, weatherlat, weatherlon }) => {
         {weatherData.times.map((time, index) => (
           <div key={index} className="forecast-day">
             <div className="forecast-date">
+              {/* Change current date format to weekday */}
               {new Date(time).toLocaleDateString("en-US", { weekday: "short" })}
             </div>
             <div className="forecast-temp">

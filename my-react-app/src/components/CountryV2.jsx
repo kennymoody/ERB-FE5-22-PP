@@ -1,5 +1,4 @@
 import CountryCard from "./CountryCardV2";
-// import Title from "./Title";
 import { locations } from "../../dataV2";
 // Fix Flags disappear issue in Windows Environment
 import Flags from "country-flag-icons/react/3x2";
